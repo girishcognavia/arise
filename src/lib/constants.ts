@@ -1,0 +1,302 @@
+import type {
+  ClinicInfo,
+  DoctorInfo,
+  NavLink,
+  OperatingHour,
+  Service,
+  Stat,
+  TeamMember,
+  Testimonial,
+} from "@/types";
+
+// ---------------------------------------------------------------------------
+// Clinic Information
+// ---------------------------------------------------------------------------
+
+export const CLINIC_INFO: ClinicInfo = {
+  name: "Sukrithi Family Health Centre",
+  tagline: "The Place Where Healing Starts",
+  mission:
+    "To nurture a healthy and happy community by providing quality health care through integrated and compassionate services.",
+  vision:
+    "A world without diseases — focusing on early detection of preventable non-communicable diseases following WHO standards and ICMR protocols.",
+  phone: "+91 85920 20242",
+  whatsapp: "https://wa.me/918592020242",
+  email: "info@sukrithihealth.com",
+  address:
+    "Near Higher Secondary School, Villadom, Villadam, Thrissur, Kerala 680631, India",
+  mapUrl:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.123456789!2d76.2144!3d10.5276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ee14b2ab0b37%3A0x7e3cf9b59a3e7c2d!2sSukrithi%20Family%20Health%20Centre!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+  fee: "From ₹300",
+  paymentMethods: ["Cash", "UPI"],
+};
+
+// ---------------------------------------------------------------------------
+// Operating Hours
+// ---------------------------------------------------------------------------
+
+export const OPERATING_HOURS: OperatingHour[] = [
+  { day: "Monday", hours: "7:00 AM – 7:00 PM" },
+  { day: "Tuesday", hours: "7:00 AM – 7:00 PM" },
+  { day: "Wednesday", hours: "7:00 AM – 7:00 PM" },
+  { day: "Thursday", hours: "7:00 AM – 7:00 PM" },
+  { day: "Friday", hours: "7:00 AM – 7:00 PM" },
+  { day: "Saturday", hours: "7:00 AM – 7:00 PM" },
+  { day: "Sunday", hours: "Closed" },
+];
+
+// ---------------------------------------------------------------------------
+// Doctor Information
+// ---------------------------------------------------------------------------
+
+export const DOCTOR_INFO: DoctorInfo = {
+  name: "Dr. K S Premlal",
+  fullTitle:
+    "Dr. K S Premlal, MBBS, MD (Community Medicine), PGDFM, CCEBDM, BCCPM",
+  qualifications: [
+    {
+      degree: "MBBS",
+      institution:
+        "Mahatma Gandhi Medical College and Research Institute",
+      year: "2008",
+    },
+    {
+      degree: "MD (Community Medicine)",
+      institution: "Tamil Nadu MGR University / Meenakshi University",
+      year: "2014",
+    },
+    {
+      degree: "PGDFM (Post Graduate Diploma in Family Medicine)",
+      institution: "CMC Vellore",
+    },
+    {
+      degree:
+        "CCEBDM (Certificate Course in Evidence Based Diabetes Management)",
+      institution:
+        "Public Health Foundation of India & Dr. Mohan's Diabetes Education Academy",
+    },
+    {
+      degree: "BCCPM (Basic Certificate Course in Palliative Medicine)",
+      institution: "WHO",
+      year: "2021",
+    },
+    {
+      degree: "MSc (Counselling and Psychotherapy)",
+    },
+    {
+      degree: "Training for Cancer Screening",
+      institution:
+        "ICMR (National Institute of Cancer Prevention and Research)",
+      year: "2021",
+    },
+    {
+      degree: "Accredited for Diabetic Foot Care & Footwear Expert",
+      institution: "CMC (Christian Medical College)",
+    },
+  ],
+  registration: {
+    number: "TMC 85605",
+    council: "Tamil Nadu Medical Council",
+  },
+  experience: "17+",
+  languages: ["English", "Malayalam", "Hindi", "Tamil"],
+  specializations: [
+    "Diabetology & Diabetic Foot Care",
+    "Diabetic Wound Care Without Amputation",
+    "Diabetic Reversal Program",
+    "Preventive Cardiology",
+    "Preventive Oncology / Cancer Screening",
+    "Pain Management & Palliative Care",
+    "Community Medicine",
+    "Counselling & Psychotherapy",
+  ],
+  academicPosition:
+    "Associate Professor, Department of Community Medicine, Malabar Medical College Hospital & Research Centre, Kozhikode",
+  profileImage: "/images/doctor/dr-premlal.jpg",
+};
+
+// ---------------------------------------------------------------------------
+// Team Members
+// ---------------------------------------------------------------------------
+
+export const TEAM_MEMBERS: TeamMember[] = [
+  {
+    name: "Dr. Sruthi MV",
+    experience: "14 years",
+    qualifications: "MBBS, MD",
+    specialization: "Oncology, Primary Care",
+    image: "/images/team/dr-sruthi.jpg",
+  },
+  {
+    name: "Dr. Prem K",
+    experience: "10 years",
+    qualifications: "MBBS, MD",
+    specialization: "Diabetology, Primary Care",
+    image: "/images/team/dr-prem-k.jpg",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Testimonials (from Google Reviews)
+// ---------------------------------------------------------------------------
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    name: "Vipindev Adat Vasudevan",
+    text: "Really liked their approach to diabetes reversal. The approach of minimal medication, exercise, and diet plan helped me to bring down my Hba1c from 9.2 to 6.5 in less than three months. The FBS and PPBS values were down to normal level.",
+    rating: 5,
+    date: "2025-11-01",
+    highlight: "HbA1c from 9.2 to 6.5 in 3 months",
+  },
+  {
+    name: "Deepak MJ",
+    text: "I have had an excellent experience with Dr. Premlal at Sukrithi Family Health Centre. He listens with patience, explains every concern clearly, and gives confidence to the patient. His approach is simple, practical, and very effective.",
+    rating: 5,
+    date: "2025-11-01",
+    highlight: "Simple, practical, and very effective",
+  },
+  {
+    name: "Binil Ns",
+    text: "Dr Premlal and all the staffs are very good at what they are doing... Their service is also good. Clinic is very clean and clear.",
+    rating: 5,
+    date: "2026-02-01",
+    highlight: "Clinic is very clean and clear",
+  },
+  {
+    name: "Shaina K Thamban",
+    text: "I have been an ulcerative colitis patient since 2012. When it was first detected, I was diagnosed with Grade 2 ulcerative colitis. Every year, I had to take steroids to control the disease, which affected my life a lot. Dr. Premlal's treatment made a significant difference.",
+    rating: 5,
+    date: "2025-12-01",
+    highlight: "Treatment for ulcerative colitis",
+  },
+  {
+    name: "Google Reviewer",
+    text: "Best Diabetic Doctor in the city, friendly staff, good atmosphere.",
+    rating: 5,
+    date: "2025-10-01",
+    highlight: "Best Diabetic Doctor in the city",
+  },
+  {
+    name: "Google Reviewer",
+    text: "Really Appreciated With The Service Of Doctors & Nurses. Excellent care and attention to every patient.",
+    rating: 5,
+    date: "2025-09-01",
+    highlight: "Excellent care and attention",
+  },
+  {
+    name: "Google Reviewer",
+    text: "Best Infrastructure for healthcare needs and Good Medical Quality. Highly recommended for anyone seeking quality healthcare.",
+    rating: 5,
+    date: "2025-08-01",
+    highlight: "Best Infrastructure for healthcare",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Statistics
+// ---------------------------------------------------------------------------
+
+export const STATS: Stat[] = [
+  { label: "Years Experience", value: 17, suffix: "+" },
+  { label: "Google Reviews", value: 387, suffix: "+" },
+  { label: "Star Rating", value: 4.9, suffix: "/5" },
+  { label: "Patients Treated", value: 10000, suffix: "+" },
+];
+
+// ---------------------------------------------------------------------------
+// Services
+// ---------------------------------------------------------------------------
+
+export const SERVICES: Service[] = [
+  {
+    id: "diabetic-care-reversal",
+    title: "Diabetic Care & Reversal",
+    shortDescription:
+      "Evidence-based diabetes reversal through minimal medication, exercise, and personalised diet plans. Proven HbA1c reduction results.",
+    icon: "/icons/diabetes.svg",
+    slug: "diabetic-care-reversal",
+  },
+  {
+    id: "wound-care",
+    title: "Diabetic Wound Care Without Amputation",
+    shortDescription:
+      "CMC-accredited diabetic foot care and wound treatment. We save limbs with advanced, non-surgical approaches.",
+    icon: "/icons/wound-care.svg",
+    slug: "wound-care",
+  },
+  {
+    id: "preventive-health",
+    title: "Preventive Health",
+    shortDescription:
+      "Annual, pre-employment, and periodic medical checkups. Vaccinations for adults, students, elderly, and cancer prevention.",
+    icon: "/icons/preventive.svg",
+    slug: "preventive-health",
+  },
+  {
+    id: "cancer-screening",
+    title: "Cancer Screening",
+    shortDescription:
+      "ICMR-certified clinical cancer screening for early detection following NICPR protocols and evidence-based methods.",
+    icon: "/icons/cancer-screening.svg",
+    slug: "cancer-screening",
+  },
+  {
+    id: "pain-palliative-care",
+    title: "Pain & Palliative Care",
+    shortDescription:
+      "WHO-certified palliative medicine for chronic pain management and compassionate home care for bedridden patients.",
+    icon: "/icons/palliative.svg",
+    slug: "pain-palliative-care",
+  },
+  {
+    id: "counselling",
+    title: "Counselling & Psychotherapy",
+    shortDescription:
+      "Professional mental health support including adolescent emotional care and counselling alongside chronic disease management.",
+    icon: "/icons/counselling.svg",
+    slug: "counselling",
+  },
+  {
+    id: "tele-consultation",
+    title: "Video / Tele Consultation",
+    shortDescription:
+      "Remote video consultations for patients who cannot visit the clinic in person. Convenient and accessible healthcare.",
+    icon: "/icons/teleconsult.svg",
+    slug: "tele-consultation",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Navigation
+// ---------------------------------------------------------------------------
+
+export const NAV_LINKS: NavLink[] = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Academics", href: "/academics" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
+];
+
+// ---------------------------------------------------------------------------
+// Social Links
+// ---------------------------------------------------------------------------
+
+export const SOCIAL_LINKS = {
+  instagram: "https://www.instagram.com/sukrithihealth/",
+  facebook: "https://www.facebook.com/sukrithihealth/",
+} as const;
+
+// ---------------------------------------------------------------------------
+// Blog Categories
+// ---------------------------------------------------------------------------
+
+export const BLOG_CATEGORIES: string[] = [
+  "Diabetes Management & Reversal",
+  "Diabetic Foot Care & Wound Prevention",
+  "Diet & Lifestyle for Diabetics",
+  "Preventive Health Tips",
+  "Cancer Awareness & Screening",
+  "Mental Health & Chronic Disease",
+];

@@ -1,0 +1,112 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { Container } from "@/components/ui/Container";
+import ServiceHero from "@/components/services/ServiceHero";
+import DiabeticCare from "@/components/services/DiabeticCare";
+import WoundCare from "@/components/services/WoundCare";
+import PreventiveHealth from "@/components/services/PreventiveHealth";
+import CancerScreening from "@/components/services/CancerScreening";
+import PalliativeCare from "@/components/services/PalliativeCare";
+import Counselling from "@/components/services/Counselling";
+import TeleConsultation from "@/components/services/TeleConsultation";
+
+export const metadata: Metadata = {
+  title: "Our Services | Sukrithi Family Health Centre",
+  description:
+    "Comprehensive healthcare services including diabetic care & reversal, wound care without amputation, preventive health checkups, cancer screening, palliative care, counselling, and tele consultation in Thrissur, Kerala.",
+  keywords: [
+    "diabetes reversal program Thrissur",
+    "diabetic wound care Kerala",
+    "cancer screening Thrissur",
+    "palliative care Kerala",
+    "preventive health checkup Thrissur",
+    "tele consultation doctor Kerala",
+    "best diabetologist Thrissur",
+  ],
+  openGraph: {
+    title: "Our Services | Sukrithi Family Health Centre",
+    description:
+      "Comprehensive diabetic care with a focus on evidence-based treatment and compassionate healing. Explore our full range of services.",
+    type: "website",
+  },
+};
+
+export default function ServicesPage() {
+  return (
+    <main>
+      {/* Hero */}
+      <ServiceHero />
+
+      {/* Service Sections - alternating white/cloud backgrounds */}
+      <div className="bg-white">
+        <DiabeticCare />
+      </div>
+
+      <div className="bg-cloud">
+        <WoundCare />
+      </div>
+
+      <div className="bg-white">
+        <PreventiveHealth />
+      </div>
+
+      <div className="bg-cloud">
+        <CancerScreening />
+      </div>
+
+      <div className="bg-white">
+        <PalliativeCare />
+      </div>
+
+      <div className="bg-cloud">
+        <Counselling />
+      </div>
+
+      <div className="bg-white">
+        <TeleConsultation />
+      </div>
+
+      {/* CTA Banner */}
+      <section
+        className="relative overflow-hidden"
+        style={{
+          background:
+            "linear-gradient(135deg, #0D9488 0%, #0891B2 100%)",
+        }}
+      >
+        {/* Decorative elements */}
+        <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/3" />
+        <div className="absolute bottom-0 left-0 w-60 h-60 rounded-full bg-white/5 translate-y-1/2 -translate-x-1/3" />
+
+        <Container className="relative z-10 py-20 md:py-28">
+          <div className="flex flex-col items-center text-center gap-6">
+            <h2 className="font-serif text-white text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight">
+              Ready to Start Your Healing Journey?
+            </h2>
+            <p className="text-white/85 text-lg md:text-xl max-w-2xl leading-relaxed">
+              Book a consultation with Dr. K S Premlal and take the first step
+              towards better health. We are here to help you every step of the
+              way.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 mt-4">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-white text-healing-teal font-semibold text-lg transition-all duration-200 hover:bg-white/90 hover:shadow-lg active:scale-95"
+              >
+                Book Appointment
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <a
+                href="tel:+918592020242"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border-2 border-white text-white font-semibold text-lg transition-all duration-200 hover:bg-white/10 active:scale-95"
+              >
+                Call +91 85920 20242
+              </a>
+            </div>
+          </div>
+        </Container>
+      </section>
+    </main>
+  );
+}

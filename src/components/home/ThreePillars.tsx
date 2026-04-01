@@ -11,7 +11,7 @@ const pillars = [
   {
     title: "Diabetic Care & Reversal",
     description:
-      "Evidence-based diabetes reversal through minimal medication, exercise, and personalised diet plans. Proven HbA1c reduction results in as little as 3 months.",
+      "Patients have brought their HbA1c from 9.2 down to 6.5 in just 3 months — with minimal medication. Our CCEBDM-accredited program combines personalised diet plans, structured exercise, and continuous monitoring to help you take control of diabetes.",
     icon: Activity,
     href: "/services#diabetic-care-reversal",
     color: "bg-teal-50 text-healing-teal",
@@ -19,7 +19,7 @@ const pillars = [
   {
     title: "Wound Care Without Amputation",
     description:
-      "CMC-accredited diabetic foot care and wound treatment. We save limbs with advanced, non-surgical approaches and compassionate care.",
+      "Before you consider amputation, consider us. Our CMC-accredited diabetic foot care program has helped patients heal wounds that others deemed untreatable — preserving limbs and restoring independence.",
     icon: Heart,
     href: "/services#wound-care",
     color: "bg-rose-50 text-rose-600",
@@ -27,7 +27,7 @@ const pillars = [
   {
     title: "Academic Excellence",
     description:
-      "Training the next generation of healthcare professionals. Associate Professor at Malabar Medical College with extensive teaching experience.",
+      "The same expertise that trains tomorrow's doctors at Malabar Medical College is available to you today. Dr. Premlal brings research-grade knowledge directly into patient care.",
     icon: GraduationCap,
     href: "/academics",
     color: "bg-amber-50 text-warm-gold",
@@ -41,7 +41,7 @@ export default function ThreePillars() {
         <ScrollReveal animation="fadeUp">
           <SectionHeading
             title="Our Expertise"
-            subtitle="Three pillars of comprehensive diabetic care"
+            subtitle="Real results in diabetes reversal, limb-saving wound care, and medical education"
           />
         </ScrollReveal>
 

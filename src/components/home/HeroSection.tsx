@@ -71,7 +71,7 @@ export default function HeroSection() {
             <ScrollReveal animation="fadeIn" delay={0}>
               <Badge className="inline-flex self-center lg:self-start">
                 <span className="mr-1.5" aria-hidden="true">&#127973;</span>
-                Diabetes Center in Thrissur
+                Thrissur&apos;s Trusted Diabetes &amp; Wound Care Centre
               </Badge>
             </ScrollReveal>
 
@@ -85,8 +85,9 @@ export default function HeroSection() {
 
             <ScrollReveal animation="fadeUp" delay={0.6}>
               <p className="text-gray-300 text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed" style={{ color: "#D1D5DB" }}>
-                Expert diabetic wound care without amputation. Evidence-based
-                diabetes reversal. 17+ years of compassionate care.
+                When doctors said amputation was the only option, our patients
+                walked out on both feet. Evidence-based diabetes reversal and
+                advanced wound care — trusted by 10,000+ patients over 17 years.
               </p>
             </ScrollReveal>
 

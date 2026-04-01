@@ -10,23 +10,25 @@ export default function TeleConsultation() {
       description={
         <>
           <p>
-            Access quality healthcare from the comfort of your home. Our video
-            consultation service makes it easy for patients who cannot visit the
-            clinic in person to receive expert medical advice and follow-up care.
+            Distance shouldn&apos;t come between you and quality care. Whether
+            you&apos;re managing diabetes from another city, need a follow-up
+            after wound care, or want expert guidance without the commute — our
+            video consultations bring Dr. Premlal&apos;s expertise directly to
+            your screen.
           </p>
           <p>
-            Whether you need a follow-up consultation, medication review, or
-            general health guidance, our tele-consultation service brings
-            Sukrithi&apos;s care directly to you.
+            Ideal for NRI patients, elderly family members, or anyone in Kerala
+            and beyond who wants access to evidence-based diabetic care from a
+            trusted specialist.
           </p>
         </>
       }
       features={[
-        "Remote access to expert medical consultation",
-        "Convenient follow-up appointments",
-        "Medication review & adjustment",
-        "Accessible from anywhere in India",
-        "Easy online booking & scheduling",
+        "Face-to-face video consults with Dr. Premlal",
+        "Convenient follow-ups without clinic visits",
+        "Medication review & dosage adjustments",
+        "Available across India — especially for NRI patients",
+        "Simple booking via WhatsApp or phone",
       ]}
       icon={Video}
       reversed={false}

@@ -49,7 +49,7 @@ export default function TeamSection() {
       <Container>
         <SectionHeading
           title="Our Team"
-          subtitle="Experienced and compassionate healthcare professionals dedicated to your well-being"
+          subtitle="A combined 40+ years of clinical expertise in diabetology, oncology, and family medicine"
         />
 
         <StaggerChildren

@@ -10,25 +10,27 @@ export default function DiabeticCare() {
       description={
         <>
           <p>
-            Our evidence-based approach to diabetes management focuses on
-            minimizing medication dependency through lifestyle modifications,
-            personalised diet planning, and structured exercise programs.
+            Diabetes doesn&apos;t have to be a life sentence. Our patients have
+            reduced their HbA1c from 9.2 to 6.5 in under three months — with
+            less medication, not more. We focus on what actually works:
+            personalised diet plans, structured exercise, and continuous
+            monitoring that puts you in control.
           </p>
           <p>
-            Dr. Premlal holds the CCEBDM (Certificate Course in Evidence Based
-            Diabetes Management) accredited by the Public Health Foundation of
-            India (PHFI) and Dr. Mohan&apos;s Diabetes Education Academy,
-            ensuring patients receive treatment grounded in the latest clinical
-            evidence.
+            Dr. Premlal&apos;s CCEBDM certification (Public Health Foundation of
+            India &amp; Dr. Mohan&apos;s Diabetes Education Academy) means your
+            treatment is grounded in the latest clinical evidence — not
+            guesswork. Every plan is built around your body, your lifestyle, and
+            your goals.
           </p>
         </>
       }
       features={[
-        "Evidence-based diabetes management (CCEBDM)",
-        "Personalized diet & exercise planning",
-        "Regular HbA1c monitoring & tracking",
-        "Medication optimization & reduction",
-        "Lifestyle counselling & support",
+        "Proven HbA1c reduction — real results in 3 months",
+        "Personalised diet & exercise plans that fit your life",
+        "Continuous blood sugar monitoring & tracking",
+        "Medication reduction — less pills, more lifestyle",
+        "Ongoing support with regular counselling sessions",
       ]}
       icon={Activity}
       reversed={false}

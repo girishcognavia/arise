@@ -23,37 +23,37 @@ const FACILITIES: FacilityItem[] = [
     icon: Sparkles,
     title: "Clean & Modern Environment",
     description:
-      "A hygienic, well-maintained clinic praised by patients for its cleanliness and comfortable atmosphere.",
+      "Consistently praised in Google reviews for cleanliness — a hygienic, well-maintained space where you feel at ease from the moment you walk in.",
   },
   {
     icon: UserCheck,
     title: "Walk-in Patients Welcome",
     description:
-      "No appointment needed for consultations. Walk in during operating hours and receive prompt, attentive care.",
+      "No appointment? No problem. Walk in during operating hours (Mon-Sat, 7 AM - 7 PM) and receive prompt, attentive care without the wait.",
   },
   {
     icon: Video,
     title: "Video Consultation Available",
     description:
-      "Connect with our doctors remotely through secure video consultations for convenient healthcare access from anywhere.",
+      "Can't make it to Thrissur? Connect with Dr. Premlal via secure video call — ideal for follow-ups, NRI consultations, and ongoing care management.",
   },
   {
     icon: Home,
     title: "Home Care for Bedridden Patients",
     description:
-      "Compassionate palliative and medical care delivered to the homes of bedridden patients who cannot visit the clinic.",
+      "Quality medical care shouldn't require a commute. We bring palliative care, wound management, and compassionate support directly to your home.",
   },
   {
     icon: Accessibility,
-    title: "Gender-Neutral Restroom",
+    title: "Inclusive & Accessible Facilities",
     description:
-      "Inclusive facilities ensuring every patient feels welcome and comfortable during their visit.",
+      "Gender-neutral restrooms and accessibility-friendly design ensure every patient feels welcome, respected, and comfortable.",
   },
   {
     icon: ShieldCheck,
-    title: "COVID Safety Protocols",
+    title: "Strict Infection Control",
     description:
-      "Strict infection control measures including sanitization, ventilation, and safety protocols for patient protection.",
+      "Rigorous sanitisation, proper ventilation, and established safety protocols protect every patient who walks through our doors.",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function Infrastructure() {
       <Container>
         <SectionHeading
           title="Our Facilities"
-          subtitle="A patient-first environment designed for comfort, accessibility, and quality care"
+          subtitle="Every detail of our clinic is designed around one thing — your comfort and recovery"
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">

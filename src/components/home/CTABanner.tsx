@@ -23,7 +23,7 @@ export default function CTABanner() {
             className="font-serif leading-tight text-3xl sm:text-4xl lg:text-5xl"
             style={{ color: "#FFFFFF" }}
           >
-            Take the First Step Towards a Healthier Life
+            Your Diabetes Doesn&apos;t Have to Define Your Life
           </h2>
 
           <p

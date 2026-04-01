@@ -37,8 +37,8 @@ export default function ServiceHero() {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl max-w-2xl leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
-            Comprehensive diabetic care with a focus on evidence-based
-            treatment and compassionate healing
+            Evidence-based treatment, proven patient outcomes, and the
+            compassion to treat every person — not just a condition
           </p>
         </div>
       </Container>

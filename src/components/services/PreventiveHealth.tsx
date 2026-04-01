@@ -10,23 +10,25 @@ export default function PreventiveHealth() {
       description={
         <>
           <p>
-            Prevention is the cornerstone of good health. Our comprehensive
-            health checkup programs are designed to detect potential health risks
-            early, enabling timely intervention and better outcomes.
+            Most serious conditions — diabetes, heart disease, cancer — give
+            early warning signs that a routine checkup can catch. The difference
+            between a simple lifestyle change and a major medical intervention
+            often comes down to catching it early.
           </p>
           <p>
-            From routine annual exams to specialised occupational health
-            screenings, we offer a range of preventive services tailored to your
-            age, lifestyle, and risk factors.
+            Our preventive health programs are tailored by age, risk profile,
+            and lifestyle. Whether you need an annual health screen, a
+            pre-employment exam, or vaccinations for your family, we design a
+            plan that keeps you one step ahead of disease.
           </p>
         </>
       }
       features={[
-        "Comprehensive annual health checkups",
-        "Pre-employment medical examinations",
-        "Periodic medical checkups for corporates",
-        "Vaccinations for adults, students & elderly",
-        "Cancer prevention vaccination programs",
+        "Thorough annual health screenings with detailed reports",
+        "Pre-employment & corporate periodic medical exams",
+        "Age-appropriate vaccination programs for all",
+        "Diabetes & heart disease risk assessments",
+        "Cancer prevention vaccination guidance",
       ]}
       icon={Shield}
       reversed={false}

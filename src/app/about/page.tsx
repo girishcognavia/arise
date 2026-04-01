@@ -12,21 +12,23 @@ import TeamSection from "@/components/about/TeamSection";
 import Infrastructure from "@/components/about/Infrastructure";
 
 export const metadata: Metadata = {
-  title: "About Us | Sukrithi Family Health Centre",
+  title: "About Dr. K S Premlal & Our Team | Sukrithi Family Health Centre",
   description:
-    "Learn about Dr. K S Premlal, our experienced medical team, and the mission of Sukrithi Family Health Centre in Thrissur, Kerala. 17+ years of compassionate healthcare.",
+    "Dr. K S Premlal — CCEBDM, CMC-accredited, WHO-certified — brings 17+ years of expertise in diabetes reversal and wound care. Meet the team behind 10,000+ successful patient outcomes in Thrissur, Kerala.",
   keywords: [
     "Dr K S Premlal",
     "Sukrithi Health Centre",
     "about sukrithi",
     "diabetologist thrissur",
     "family doctor thrissur kerala",
+    "diabetes specialist kerala",
     "TMC 85605",
+    "best diabetologist thrissur",
   ],
   openGraph: {
-    title: "About Us | Sukrithi Family Health Centre",
+    title: "About Dr. K S Premlal & Our Team | Sukrithi Family Health Centre",
     description:
-      "Meet Dr. K S Premlal and the team behind Sukrithi Family Health Centre. 17+ years of expert diabetic care, preventive health, and compassionate medicine in Thrissur.",
+      "17+ years of evidence-based diabetic care, diabetes reversal, and limb-saving wound care. Meet the team that 10,000+ patients trust in Thrissur, Kerala.",
     locale: "en_IN",
     type: "website",
     siteName: "Sukrithi Family Health Centre",
@@ -62,8 +64,8 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-lg md:text-xl max-w-2xl leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
-              Dedicated to nurturing a healthy and happy community through
-              integrated and compassionate healthcare services.
+              17+ years of helping patients reverse diabetes, save limbs, and
+              reclaim their health — one evidence-based treatment plan at a time.
             </p>
           </div>
         </Container>
@@ -90,11 +92,12 @@ export default function AboutPage() {
 
         <Container className="relative z-10 text-center">
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-tight" style={{ color: "#FFFFFF" }}>
-            Take the First Step Towards
-            <br />a Healthier Life
+            Ready to Take Control of
+            <br />Your Health?
           </h2>
           <p className="mt-4 text-lg max-w-lg mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>
-            Book an appointment with Dr. K S Premlal and our expert team today.
+            Speak with Dr. Premlal about diabetes reversal, wound care, or any
+            health concern. Walk-ins welcome, Mon&ndash;Sat.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">

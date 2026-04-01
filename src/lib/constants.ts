@@ -209,7 +209,7 @@ export const SERVICES: Service[] = [
     id: "diabetic-care-reversal",
     title: "Diabetic Care & Reversal",
     shortDescription:
-      "Evidence-based diabetes reversal through minimal medication, exercise, and personalised diet plans. Proven HbA1c reduction results.",
+      "Patients have reduced HbA1c from 9.2 to 6.5 in 3 months. Our CCEBDM-accredited program uses personalised diet, exercise, and minimal medication.",
     icon: "/icons/diabetes.svg",
     slug: "diabetic-care-reversal",
   },
@@ -217,7 +217,7 @@ export const SERVICES: Service[] = [
     id: "wound-care",
     title: "Diabetic Wound Care Without Amputation",
     shortDescription:
-      "CMC-accredited diabetic foot care and wound treatment. We save limbs with advanced, non-surgical approaches.",
+      "Before you consider amputation, consider us. CMC-accredited foot care that has saved limbs others deemed untreatable.",
     icon: "/icons/wound-care.svg",
     slug: "wound-care",
   },
@@ -225,7 +225,7 @@ export const SERVICES: Service[] = [
     id: "preventive-health",
     title: "Preventive Health",
     shortDescription:
-      "Annual, pre-employment, and periodic medical checkups. Vaccinations for adults, students, elderly, and cancer prevention.",
+      "Catch diabetes, heart disease, and cancer risks early — when a simple lifestyle change can replace a major intervention.",
     icon: "/icons/preventive.svg",
     slug: "preventive-health",
   },
@@ -233,7 +233,7 @@ export const SERVICES: Service[] = [
     id: "cancer-screening",
     title: "Cancer Screening",
     shortDescription:
-      "ICMR-certified clinical cancer screening for early detection following NICPR protocols and evidence-based methods.",
+      "ICMR-certified early detection following NICPR protocols. When cancer is caught early, survival rates improve dramatically.",
     icon: "/icons/cancer-screening.svg",
     slug: "cancer-screening",
   },
@@ -241,7 +241,7 @@ export const SERVICES: Service[] = [
     id: "pain-palliative-care",
     title: "Pain & Palliative Care",
     shortDescription:
-      "WHO-certified palliative medicine for chronic pain management and compassionate home care for bedridden patients.",
+      "WHO-certified care focused on reducing suffering and preserving dignity. Home visits available for bedridden patients.",
     icon: "/icons/palliative.svg",
     slug: "pain-palliative-care",
   },
@@ -249,7 +249,7 @@ export const SERVICES: Service[] = [
     id: "counselling",
     title: "Counselling & Psychotherapy",
     shortDescription:
-      "Professional mental health support including adolescent emotional care and counselling alongside chronic disease management.",
+      "Diabetes affects more than blood sugar. MSc-qualified counselling that treats the emotional weight of living with chronic illness.",
     icon: "/icons/counselling.svg",
     slug: "counselling",
   },
@@ -257,7 +257,7 @@ export const SERVICES: Service[] = [
     id: "tele-consultation",
     title: "Video / Tele Consultation",
     shortDescription:
-      "Remote video consultations for patients who cannot visit the clinic in person. Convenient and accessible healthcare.",
+      "Expert diabetic care from anywhere in India. Ideal for follow-ups, NRI patients, and ongoing management via secure video call.",
     icon: "/icons/teleconsult.svg",
     slug: "tele-consultation",
   },

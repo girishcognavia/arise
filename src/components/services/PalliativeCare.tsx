@@ -10,24 +10,26 @@ export default function PalliativeCare() {
       description={
         <>
           <p>
-            Our WHO-certified palliative care program provides compassionate
-            support for patients dealing with chronic pain and serious illness.
-            Dr. Premlal holds the BCCPM (Basic Certificate Course in Palliative
-            Medicine) from WHO, ensuring care that meets international standards.
+            Living with chronic pain or serious illness is difficult enough
+            without feeling alone in it. Our WHO-certified palliative care
+            program (BCCPM) focuses on what matters most — reducing suffering,
+            preserving dignity, and helping patients and families navigate each
+            day with support and clarity.
           </p>
           <p>
-            We also offer dedicated home care services for bedridden patients,
-            bringing quality medical attention and comfort to those who need it
-            most.
+            For patients who cannot travel, we bring care to your doorstep.
+            Our dedicated home visits ensure that bedridden patients receive
+            the same quality of medical attention, comfort, and compassion as
+            those who visit the clinic.
           </p>
         </>
       }
       features={[
-        "WHO-certified palliative medicine (BCCPM)",
-        "Chronic pain management & relief",
-        "Home care for bedridden patients",
-        "Compassionate end-of-life support",
-        "Family counselling & caregiver guidance",
+        "WHO-certified care meeting international standards",
+        "Effective chronic pain management & relief plans",
+        "Home visits for bedridden and immobile patients",
+        "Compassionate end-of-life support with dignity",
+        "Family counselling & caregiver training",
       ]}
       icon={Hand}
       reversed={false}

@@ -12,22 +12,24 @@ import Counselling from "@/components/services/Counselling";
 import TeleConsultation from "@/components/services/TeleConsultation";
 
 export const metadata: Metadata = {
-  title: "Our Services | Sukrithi Family Health Centre",
+  title: "Services — Diabetes Reversal, Wound Care & More | Sukrithi Family Health Centre",
   description:
-    "Comprehensive healthcare services including diabetic care & reversal, wound care without amputation, preventive health checkups, cancer screening, palliative care, counselling, and tele consultation in Thrissur, Kerala.",
+    "Diabetes reversal with proven HbA1c results. CMC-accredited wound care without amputation. ICMR-certified cancer screening. WHO-certified palliative care. All under one roof in Thrissur, Kerala.",
   keywords: [
     "diabetes reversal program Thrissur",
     "diabetic wound care Kerala",
+    "diabetic foot care without amputation",
     "cancer screening Thrissur",
     "palliative care Kerala",
     "preventive health checkup Thrissur",
     "tele consultation doctor Kerala",
     "best diabetologist Thrissur",
+    "HbA1c reduction program India",
   ],
   openGraph: {
-    title: "Our Services | Sukrithi Family Health Centre",
+    title: "Services — Diabetes Reversal, Wound Care & More | Sukrithi Family Health Centre",
     description:
-      "Comprehensive diabetic care with a focus on evidence-based treatment and compassionate healing. Explore our full range of services.",
+      "Proven diabetes reversal. Limb-saving wound care. ICMR-certified cancer screening. 7 specialised services by Dr. K S Premlal in Thrissur.",
     type: "website",
   },
 };
@@ -82,12 +84,12 @@ export default function ServicesPage() {
         <Container className="relative z-10 py-20 md:py-28">
           <div className="flex flex-col items-center text-center gap-6">
             <h2 className="font-serif text-white text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight">
-              Ready to Start Your Healing Journey?
+              Don&apos;t Wait for Symptoms to Worsen
             </h2>
             <p className="text-white/85 text-lg md:text-xl max-w-2xl leading-relaxed">
-              Book a consultation with Dr. K S Premlal and take the first step
-              towards better health. We are here to help you every step of the
-              way.
+              Whether it&apos;s uncontrolled blood sugar, a wound that won&apos;t
+              heal, or a health concern you&apos;ve been putting off — the sooner
+              you act, the better the outcome. Talk to Dr. Premlal today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Link

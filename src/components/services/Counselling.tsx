@@ -10,23 +10,25 @@ export default function Counselling() {
       description={
         <>
           <p>
-            Mental health is an integral part of overall well-being. With an MSc
-            in Counselling and Psychotherapy, Dr. Premlal provides professional
-            mental health support alongside chronic disease management.
+            A diabetes diagnosis affects more than blood sugar — it changes how
+            you feel, sleep, and cope with daily life. With an MSc in
+            Counselling and Psychotherapy, Dr. Premlal uniquely understands the
+            emotional weight of living with chronic illness and provides support
+            that treats the mind alongside the body.
           </p>
           <p>
-            We offer specialised care for adolescent emotional challenges and
-            provide counselling that addresses the psychological impact of living
-            with chronic conditions like diabetes.
+            We also offer specialised care for adolescents navigating emotional
+            challenges, and for families dealing with the stress that chronic
+            conditions bring into the home.
           </p>
         </>
       }
       features={[
-        "MSc-qualified counselling & psychotherapy",
-        "Adolescent emotional care & support",
-        "Mental health alongside chronic disease management",
-        "Stress & anxiety management techniques",
-        "Family & relationship counselling",
+        "MSc-qualified counselling built into your care plan",
+        "Emotional support for diabetes and chronic illness",
+        "Adolescent mental health & emotional wellbeing",
+        "Stress, anxiety, and coping strategy sessions",
+        "Family counselling for caregiver burnout",
       ]}
       icon={Brain}
       reversed={true}

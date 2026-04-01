@@ -72,11 +72,12 @@ export default function DoctorBrief() {
 
             <ScrollReveal animation="fadeUp" delay={0.4}>
               <p className="text-slate leading-relaxed" style={{ color: "#64748B" }}>
-                Specialist in diabetic wound care and diabetes reversal at
-                Sukrithi Family Health Centre, Thrissur. Dr. Premlal combines
-                evidence-based medicine with compassionate care, helping patients
-                achieve remarkable health transformations through personalised
-                treatment plans.
+                For over 17 years, Dr. Premlal has helped thousands of patients
+                reverse diabetes, heal chronic wounds, and avoid amputations.
+                His approach is simple but powerful — listen carefully, treat the
+                whole person, and use evidence-based protocols that deliver
+                measurable results. Patients don&apos;t just feel better; their
+                lab reports prove it.
               </p>
             </ScrollReveal>
 
@@ -97,7 +98,7 @@ export default function DoctorBrief() {
             <ScrollReveal animation="fadeUp" delay={0.7}>
               <Link href="/about">
                 <Button variant="primary" size="md">
-                  Know More
+                  View Full Profile
                 </Button>
               </Link>
             </ScrollReveal>

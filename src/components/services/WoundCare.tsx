@@ -10,23 +10,26 @@ export default function WoundCare() {
       description={
         <>
           <p>
-            Our CMC-accredited diabetic foot care program provides specialised
-            treatment for diabetic wounds and foot ulcers, with the primary goal
-            of preventing amputations.
+            If you or a loved one has been told that amputation is the only
+            option, please get a second opinion first. Our CMC-accredited
+            (Christian Medical College) diabetic foot care program has helped
+            patients heal wounds that were considered untreatable — saving limbs
+            and restoring the ability to walk, work, and live independently.
           </p>
           <p>
-            With expert wound management techniques and personalised footwear
-            guidance, we help patients preserve limb function and maintain their
-            quality of life through advanced, non-surgical approaches.
+            Using advanced wound management techniques, customised diabetic
+            footwear, and a step-by-step healing protocol, we treat the wound
+            and the underlying condition together. Every patient&apos;s recovery
+            plan is closely monitored until full healing.
           </p>
         </>
       }
       features={[
-        "CMC-accredited diabetic foot care",
-        "Advanced wound management techniques",
-        "Diabetic footwear guidance",
-        "Regular wound assessment & monitoring",
-        "Amputation prevention protocols",
+        "CMC-accredited foot care — gold-standard protocols",
+        "Non-surgical wound healing for diabetic ulcers",
+        "Custom diabetic footwear to prevent recurrence",
+        "Weekly wound assessment with photographic tracking",
+        "Amputation prevention — saving limbs is our priority",
       ]}
       icon={HeartPulse}
       reversed={true}

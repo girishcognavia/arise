@@ -32,7 +32,7 @@ export default function PreventiveHealth() {
       ]}
       icon={Shield}
       reversed={false}
-      imagePlaceholder="Preventive Health & Checkups"
+      imageSrc="/images/services/preventive-health.jpg"
     />
   );
 }

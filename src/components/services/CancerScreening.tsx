@@ -33,7 +33,7 @@ export default function CancerScreening() {
       ]}
       icon={Search}
       reversed={true}
-      imagePlaceholder="Cancer Screening"
+      imageSrc="/images/services/cancer-screening.jpg"
     />
   );
 }

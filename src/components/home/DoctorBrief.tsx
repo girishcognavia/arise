@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Globe } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Badge } from "@/components/ui/Badge";
@@ -16,17 +17,18 @@ export default function DoctorBrief() {
     <section className="section-padding bg-cloud">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left - Image placeholder */}
+          {/* Left - Doctor Image */}
           <ScrollReveal animation="slideLeft">
             <div className="relative max-w-md mx-auto lg:mx-0">
-              <div
-                className="w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-xl flex items-end justify-center"
-                style={{
-                  background:
-                    "linear-gradient(180deg, #0D9488 0%, #065F46 60%, #0F766E 100%)",
-                }}
-              >
-                <span className="text-white/90 font-serif text-2xl pb-8" style={{ color: "#E2E8F0" }}>
+              <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-xl relative">
+                <Image
+                  src="/images/doctor/dr-premlal.jpg"
+                  alt={DOCTOR_INFO.name}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 to-transparent" />
+                <span className="absolute bottom-6 left-0 right-0 text-center text-white/90 font-serif text-2xl">
                   {DOCTOR_INFO.name}
                 </span>
               </div>

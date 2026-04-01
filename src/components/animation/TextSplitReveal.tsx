@@ -67,7 +67,7 @@ export default function TextSplitReveal({
         <span
           key={`${word}-${i}`}
           className="split-word"
-          style={{ display: "inline-block", opacity: 0, marginRight: "0.3em" }}
+          style={{ display: "inline-block", marginRight: "0.3em" }}
         >
           {word}
         </span>

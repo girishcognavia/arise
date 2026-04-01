@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import type { LucideIcon } from "lucide-react";
 import { CheckCircle } from "lucide-react";
 import { Container } from "@/components/ui/Container";
@@ -15,6 +16,7 @@ interface ServiceCardProps {
   icon: LucideIcon;
   reversed?: boolean;
   imagePlaceholder?: string;
+  imageSrc?: string;
   className?: string;
 }
 
@@ -25,27 +27,40 @@ export default function ServiceCard({
   icon: Icon,
   reversed = false,
   imagePlaceholder,
+  imageSrc,
   className = "",
 }: ServiceCardProps) {
   const imageContent = (
     <ScrollReveal animation={reversed ? "slideRight" : "slideLeft"}>
       <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
-        <div
-          className="absolute inset-0"
-          style={{
-            background: reversed
-              ? "linear-gradient(135deg, #065F46 0%, #0D9488 50%, #0891B2 100%)"
-              : "linear-gradient(135deg, #0D9488 0%, #065F46 50%, #1E293B 100%)",
-          }}
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center px-6">
-            <Icon className="w-16 h-16 text-white/30 mx-auto mb-4" style={{ color: "rgba(255,255,255,0.3)" }} />
-            <p className="text-white/60 font-medium text-lg" style={{ color: "#CBD5E1" }}>
-              {imagePlaceholder || title}
-            </p>
-          </div>
-        </div>
+        {imageSrc ? (
+          <Image
+            src={imageSrc}
+            alt={title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        ) : (
+          <>
+            <div
+              className="absolute inset-0"
+              style={{
+                background: reversed
+                  ? "linear-gradient(135deg, #065F46 0%, #0D9488 50%, #0891B2 100%)"
+                  : "linear-gradient(135deg, #0D9488 0%, #065F46 50%, #1E293B 100%)",
+              }}
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center px-6">
+                <Icon className="w-16 h-16 text-white/30 mx-auto mb-4" style={{ color: "rgba(255,255,255,0.3)" }} />
+                <p className="text-white/60 font-medium text-lg" style={{ color: "#CBD5E1" }}>
+                  {imagePlaceholder || title}
+                </p>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </ScrollReveal>
   );

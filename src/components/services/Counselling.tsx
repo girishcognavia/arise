@@ -32,7 +32,7 @@ export default function Counselling() {
       ]}
       icon={Brain}
       reversed={true}
-      imagePlaceholder="Counselling & Psychotherapy"
+      imageSrc="/images/services/counselling.jpg"
     />
   );
 }

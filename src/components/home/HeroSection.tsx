@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronDown, Star } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -52,14 +53,16 @@ export default function HeroSection() {
           <div className="lg:hidden flex justify-center pt-24">
             <div className="relative w-64 h-64">
               <OrganicBlobs />
-              <div
-                className="relative z-10 w-full h-full rounded-2xl flex items-end justify-center overflow-hidden"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #0D9488 0%, #065F46 50%, #0891B2 100%)",
-                }}
-              >
-                <span className="text-white/80 font-serif text-lg pb-6" style={{ color: "#E2E8F0" }}>
+              <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/doctor/dr-premlal.jpg"
+                  alt="Dr. K S Premlal"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />
+                <span className="absolute bottom-4 left-0 right-0 text-center text-white/90 font-serif text-lg">
                   Dr. K S Premlal
                 </span>
               </div>
@@ -131,14 +134,16 @@ export default function HeroSection() {
             <div className="relative w-full max-w-sm aspect-[3/4]">
               <OrganicBlobs />
               <ScrollReveal animation="slideRight" delay={0.5} className="relative z-10 h-full">
-                <div
-                  className="w-full h-full rounded-2xl flex items-end justify-center overflow-hidden shadow-2xl"
-                  style={{
-                    background:
-                      "linear-gradient(180deg, #0D9488 0%, #065F46 60%, #0F766E 100%)",
-                  }}
-                >
-                  <span className="text-white/90 font-serif text-2xl pb-8" style={{ color: "#E2E8F0" }}>
+                <div className="w-full h-full rounded-2xl overflow-hidden shadow-2xl relative">
+                  <Image
+                    src="/images/doctor/dr-premlal.jpg"
+                    alt="Dr. K S Premlal"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />
+                  <span className="absolute bottom-6 left-0 right-0 text-center text-white/90 font-serif text-2xl">
                     Dr. K S Premlal
                   </span>
                 </div>

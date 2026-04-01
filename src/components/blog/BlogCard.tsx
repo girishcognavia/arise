@@ -1,7 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import type { BlogPost } from "@/types/blog";
+
+// Map blog slugs to their images
+const blogImages: Record<string, string> = {
+  "diabetic-foot-care-guide": "/images/blog/diabetic-foot-care.jpg",
+  "diabetes-reversal-lifestyle": "/images/blog/diabetes-reversal.jpg",
+  "understanding-hba1c": "/images/blog/hba1c.jpg",
+};
 
 interface BlogCardProps {
   post: BlogPost;
@@ -14,13 +22,24 @@ export default function BlogCard({ post }: BlogCardProps) {
     day: "numeric",
   });
 
+  const imageSrc = blogImages[post.slug];
+
   return (
     <Link href={`/blog/${post.slug}`} className="group block">
       <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden h-full flex flex-col">
         {/* Image area */}
-        <div className="relative overflow-hidden">
-          <div className="aspect-[16/9] bg-gradient-to-br from-healing-teal/20 to-deep-teal/40 group-hover:scale-105 transition-transform duration-500" />
-          <span className="absolute top-3 left-3 bg-healing-teal text-white text-xs font-semibold px-3 py-1 rounded-full" style={{ color: "#FFFFFF" }}>
+        <div className="relative overflow-hidden aspect-[16/9]">
+          {imageSrc ? (
+            <Image
+              src={imageSrc}
+              alt={post.title}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          ) : (
+            <div className="w-full h-full bg-gradient-to-br from-healing-teal/20 to-deep-teal/40 group-hover:scale-105 transition-transform duration-500" />
+          )}
+          <span className="absolute top-3 left-3 bg-healing-teal text-white text-xs font-semibold px-3 py-1 rounded-full z-10" style={{ color: "#FFFFFF" }}>
             {post.category}
           </span>
         </div>

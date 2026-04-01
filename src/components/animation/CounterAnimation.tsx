@@ -76,7 +76,7 @@ export default function CounterAnimation({
 
   return (
     <span ref={ref} className={className}>
-      {prefix}0{suffix}
+      {prefix}{target.toFixed(decimals)}{suffix}
     </span>
   );
 }

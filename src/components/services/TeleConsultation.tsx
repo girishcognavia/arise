@@ -32,7 +32,7 @@ export default function TeleConsultation() {
       ]}
       icon={Video}
       reversed={false}
-      imagePlaceholder="Video / Tele Consultation"
+      imageSrc="/images/services/teleconsult.jpg"
     />
   );
 }

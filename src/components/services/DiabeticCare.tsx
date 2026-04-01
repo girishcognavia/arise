@@ -34,7 +34,7 @@ export default function DiabeticCare() {
       ]}
       icon={Activity}
       reversed={false}
-      imagePlaceholder="Diabetic Care & Reversal Program"
+      imageSrc="/images/services/diabetes-care.jpg"
     />
   );
 }

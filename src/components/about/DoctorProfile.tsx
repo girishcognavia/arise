@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useEffect } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Container } from "@/components/ui/Container";
@@ -56,16 +57,16 @@ export default function DoctorProfile() {
     <section className="section-padding bg-white">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left: Doctor Image Placeholder */}
+          {/* Left: Doctor Image */}
           <ScrollReveal animation="slideLeft">
             <div className="relative">
-              <div
-                className="w-full aspect-[3/4] rounded-2xl overflow-hidden relative"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #0D9488 0%, #065F46 50%, #1E293B 100%)",
-                }}
-              >
+              <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden relative">
+                <Image
+                  src="/images/doctor/dr-premlal.jpg"
+                  alt={DOCTOR_INFO.name}
+                  fill
+                  className="object-cover"
+                />
                 {/* Decorative organic shape */}
                 <div className="absolute -top-6 -right-6 w-32 h-32 bg-soft-teal/30 rounded-full blur-2xl" />
                 <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-healing-teal/20 rounded-full blur-3xl" />
@@ -90,7 +91,7 @@ export default function DoctorProfile() {
                       <CounterAnimation
                         target={17}
                         suffix="+"
-                        className="text-2xl font-bold text-charcoal" style={{ color: "#1E293B" }}
+                        className="text-2xl font-bold text-charcoal"
                       />
                     </div>
                     <p className="text-xs text-slate" style={{ color: "#64748B" }}>Years Experience</p>

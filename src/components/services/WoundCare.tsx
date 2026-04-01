@@ -33,7 +33,7 @@ export default function WoundCare() {
       ]}
       icon={HeartPulse}
       reversed={true}
-      imagePlaceholder="Diabetic Wound Care"
+      imageSrc="/images/services/wound-care.jpg"
     />
   );
 }

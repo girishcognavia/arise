@@ -82,10 +82,10 @@ export default function AppointmentForm() {
           <div className="flex justify-center mb-4">
             <CheckCircle className="w-16 h-16 text-green-500" />
           </div>
-          <h3 className="font-serif text-xl sm:text-2xl text-charcoal mb-3">
+          <h3 className="font-serif text-xl sm:text-2xl text-charcoal mb-3" style={{ color: "#1E293B" }}>
             Thank You!
           </h3>
-          <p className="text-slate text-body leading-relaxed mb-6 max-w-md mx-auto">
+          <p className="text-slate text-body leading-relaxed mb-6 max-w-md mx-auto" style={{ color: "#64748B" }}>
             We have received your appointment request. Our team will contact you
             shortly to confirm your appointment.
           </p>
@@ -100,10 +100,10 @@ export default function AppointmentForm() {
   return (
     <ScrollReveal animation="fadeUp">
       <div className="bg-white rounded-xl shadow-lg p-6 md:p-10">
-        <h2 className="font-serif text-xl sm:text-2xl text-charcoal mb-2">
+        <h2 className="font-serif text-xl sm:text-2xl text-charcoal mb-2" style={{ color: "#1E293B" }}>
           Book an Appointment
         </h2>
-        <p className="text-slate text-sm mb-8">
+        <p className="text-slate text-sm mb-8" style={{ color: "#64748B" }}>
           Fill in the form below and we will get back to you to confirm your
           appointment.
         </p>

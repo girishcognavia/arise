@@ -40,8 +40,8 @@ export default function ServiceCard({
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-6">
-            <Icon className="w-16 h-16 text-white/30 mx-auto mb-4" />
-            <p className="text-white/60 font-medium text-lg">
+            <Icon className="w-16 h-16 text-white/30 mx-auto mb-4" style={{ color: "rgba(255,255,255,0.3)" }} />
+            <p className="text-white/60 font-medium text-lg" style={{ color: "#CBD5E1" }}>
               {imagePlaceholder || title}
             </p>
           </div>
@@ -59,12 +59,12 @@ export default function ServiceCard({
         </div>
 
         {/* Title */}
-        <h3 className="font-serif text-xl sm:text-2xl text-charcoal leading-tight tracking-tight">
+        <h3 className="font-serif text-xl sm:text-2xl text-charcoal leading-tight tracking-tight" style={{ color: "#1E293B" }}>
           {title}
         </h3>
 
         {/* Description */}
-        <div className="text-slate leading-relaxed space-y-4">
+        <div className="text-slate leading-relaxed space-y-4" style={{ color: "#64748B" }}>
           {typeof description === "string" ? <p>{description}</p> : description}
         </div>
 
@@ -73,7 +73,7 @@ export default function ServiceCard({
           {features.map((feature) => (
             <li key={feature} className="flex items-start gap-3">
               <CheckCircle className="w-5 h-5 text-healing-teal mt-0.5 flex-shrink-0" />
-              <span className="text-charcoal">{feature}</span>
+              <span className="text-charcoal" style={{ color: "#1E293B" }}>{feature}</span>
             </li>
           ))}
         </ul>

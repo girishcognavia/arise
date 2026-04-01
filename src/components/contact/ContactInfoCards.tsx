@@ -65,12 +65,12 @@ export default function ContactInfoCards() {
                 {card.icon}
               </div>
               <div>
-                <p className="text-xs font-medium text-slate uppercase tracking-wide mb-1">
+                <p className="text-xs font-medium text-slate uppercase tracking-wide mb-1" style={{ color: "#64748B" }}>
                   {card.title}
                 </p>
-                <p className="font-semibold text-charcoal">{card.detail}</p>
+                <p className="font-semibold text-charcoal" style={{ color: "#1E293B" }}>{card.detail}</p>
                 {card.subDetail && (
-                  <p className="text-sm text-slate mt-0.5">{card.subDetail}</p>
+                  <p className="text-sm text-slate mt-0.5" style={{ color: "#64748B" }}>{card.subDetail}</p>
                 )}
               </div>
             </div>

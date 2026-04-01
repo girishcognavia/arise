@@ -22,11 +22,11 @@ export const CLINIC_INFO: ClinicInfo = {
     "A world without diseases — focusing on early detection of preventable non-communicable diseases following WHO standards and ICMR protocols.",
   phone: "+91 85920 20242",
   whatsapp: "https://wa.me/918592020242",
-  email: "info@sukrithihealth.com",
+  email: "premmbbs@gmail.com",
   address:
     "Near Higher Secondary School, Villadom, Villadam, Thrissur, Kerala 680631, India",
   mapUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.123456789!2d76.2144!3d10.5276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ee14b2ab0b37%3A0x7e3cf9b59a3e7c2d!2sSukrithi%20Family%20Health%20Centre!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "https://maps.google.com/maps?q=Sukrithi+Family+Health+Centre+Villadom+Thrissur+Kerala+680631&t=&z=15&ie=UTF8&iwloc=&output=embed",
   fee: "From ₹300",
   paymentMethods: ["Cash", "UPI"],
 };
@@ -56,24 +56,22 @@ export const DOCTOR_INFO: DoctorInfo = {
   qualifications: [
     {
       degree: "MBBS",
-      institution:
-        "Mahatma Gandhi Medical College and Research Institute",
+      institution: "Mahatma Gandhi Medical College and Research Institute, Pondicherry (Pondicherry University)",
       year: "2008",
     },
     {
       degree: "MD (Community Medicine)",
-      institution: "Tamil Nadu MGR University / Meenakshi University",
+      institution: "Meenakshi Medical College and Research Institute, Kanchipuram",
       year: "2014",
     },
     {
       degree: "PGDFM (Post Graduate Diploma in Family Medicine)",
       institution: "CMC Vellore",
+      year: "2024",
     },
     {
-      degree:
-        "CCEBDM (Certificate Course in Evidence Based Diabetes Management)",
-      institution:
-        "Public Health Foundation of India & Dr. Mohan's Diabetes Education Academy",
+      degree: "CCEBDM (Certificate Course in Evidence Based Diabetes Management)",
+      institution: "Public Health Foundation of India & Dr. Mohan's Diabetes Education Academy",
     },
     {
       degree: "BCCPM (Basic Certificate Course in Palliative Medicine)",
@@ -85,8 +83,7 @@ export const DOCTOR_INFO: DoctorInfo = {
     },
     {
       degree: "Training for Cancer Screening",
-      institution:
-        "ICMR (National Institute of Cancer Prevention and Research)",
+      institution: "ICMR (National Institute of Cancer Prevention and Research)",
       year: "2021",
     },
     {
@@ -101,17 +98,17 @@ export const DOCTOR_INFO: DoctorInfo = {
   experience: "17+",
   languages: ["English", "Malayalam", "Hindi", "Tamil"],
   specializations: [
+    "Community & Family Medicine",
     "Diabetology & Diabetic Foot Care",
     "Diabetic Wound Care Without Amputation",
     "Diabetic Reversal Program",
-    "Preventive Cardiology",
     "Preventive Oncology / Cancer Screening",
     "Pain Management & Palliative Care",
-    "Community Medicine",
     "Counselling & Psychotherapy",
+    "Preventive Cardiology",
   ],
   academicPosition:
-    "Associate Professor, Department of Community Medicine, Malabar Medical College Hospital & Research Centre, Kozhikode",
+    "Consultant Community and Family Physician, Arise Medical Centre | Former Professor, Kannur Medical College",
   profileImage: "/images/doctor/dr-premlal.jpg",
 };
 

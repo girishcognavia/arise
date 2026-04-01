@@ -16,46 +16,69 @@ interface TimelineItem {
 
 const TIMELINE_DATA: TimelineItem[] = [
   {
-    year: "2008",
-    title: "MBBS",
-    institution: "Mahatma Gandhi Medical College and Research Institute",
+    year: "2003–2008",
+    title: "MBBS — Mahatma Gandhi Medical College",
+    institution: "Pondicherry University, Pondicherry. Graduated December 2008.",
   },
   {
-    year: "2009",
-    title: "Registered with Tamil Nadu Medical Council",
-    institution: "TMC 85605",
+    year: "2008–2009",
+    title: "Clerkship Trainee",
+    institution: "Mahatma Gandhi Medical College and Research Institute, Pondicherry",
   },
   {
-    year: "2014",
+    year: "2009–2011",
+    title: "Tutor, Department of Physiology",
+    institution: "ACS Medical College, Chennai",
+  },
+  {
+    year: "2011–2014",
     title: "MD (Community Medicine)",
-    institution: "Tamil Nadu MGR University / Meenakshi University",
+    institution: "Meenakshi Medical College and Research Institute, Kanchipuram. Passed May 2014.",
   },
   {
-    year: "",
-    title: "PGDFM (Post Graduate Diploma in Family Medicine)",
-    institution: "CMC Vellore",
+    year: "2014–2015",
+    title: "Assistant Professor, Community Medicine",
+    institution: "Saveetha Medical College, Chennai",
   },
   {
-    year: "",
-    title: "CCEBDM (Certificate Course in Evidence Based Diabetes Management)",
-    institution:
-      "Public Health Foundation of India & Dr. Mohan's Diabetes Education Academy",
+    year: "2015–2016",
+    title: "Assistant Professor, Community Medicine",
+    institution: "Malabar Medical College & Hospital, Calicut",
   },
   {
-    year: "2021",
-    title: "BCCPM & Cancer Screening Certification",
-    institution: "WHO + ICMR (National Institute of Cancer Prevention and Research)",
+    year: "2017–2018",
+    title: "Assistant Professor, Community Medicine",
+    institution: "P.K. Das Institute of Medical Sciences, Palakkad",
   },
   {
-    year: "",
-    title: "MSc (Counselling and Psychotherapy)",
-    institution: "Advanced mental health training",
+    year: "2018–2019",
+    title: "Associate Professor, Community Medicine",
+    institution: "P.K. Das Institute of Medical Sciences, Palakkad",
+  },
+  {
+    year: "2019–2022",
+    title: "Associate Professor, Community Medicine",
+    institution: "Malabar Medical College & Hospital, Calicut",
+  },
+  {
+    year: "2022",
+    title: "Professor, Community Medicine",
+    institution: "Palakkad Institute of Medical Science, Palakkad",
+  },
+  {
+    year: "2022–2024",
+    title: "Medical Officer & PGDFM from CMC Vellore",
+    institution: "Sukrithi Family Health Centre — Community and Family Medicine",
+  },
+  {
+    year: "2024–2025",
+    title: "Professor, Community Medicine",
+    institution: "Kannur Medical College",
   },
   {
     year: "Present",
-    title: "Associate Professor & Sukrithi Family Health Centre",
-    institution:
-      "Malabar Medical College Hospital & Research Centre, Kozhikode + Sukrithi Family Health Centre, Thrissur",
+    title: "Consultant Community & Family Physician",
+    institution: "Arise Medical Centre — Clinical practice in diabetic care, wound care, and family medicine",
   },
 ];
 
@@ -183,7 +206,7 @@ export default function CareerTimeline() {
                       ? "md:flex-row"
                       : "md:flex-row-reverse"
                   }`}
-                  style={{ opacity: 0 }}
+                  style={{ opacity: 1 }}
                 >
                   {/* Content card */}
                   <div
@@ -193,14 +216,14 @@ export default function CareerTimeline() {
                   >
                     <div className="bg-white rounded-xl p-5 shadow-md hover:shadow-lg transition-shadow duration-300">
                       {item.year && (
-                        <span className="inline-block px-3 py-1 rounded-full bg-healing-teal text-white text-xs font-bold mb-2">
+                        <span className="inline-block px-3 py-1 rounded-full bg-healing-teal text-white text-xs font-bold mb-2" style={{ color: "#FFFFFF" }}>
                           {item.year}
                         </span>
                       )}
-                      <h4 className="text-base font-semibold text-charcoal leading-snug">
+                      <h4 className="text-base font-semibold text-charcoal leading-snug" style={{ color: "#1E293B" }}>
                         {item.title}
                       </h4>
-                      <p className="text-sm text-slate mt-1 leading-relaxed">
+                      <p className="text-sm text-slate mt-1 leading-relaxed" style={{ color: "#64748B" }}>
                         {item.institution}
                       </p>
                     </div>

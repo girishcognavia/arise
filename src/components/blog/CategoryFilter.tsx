@@ -26,6 +26,7 @@ export default function CategoryFilter({
                 ? "bg-healing-teal text-white shadow-md"
                 : "bg-gray-100 text-charcoal hover:bg-gray-200"
             }`}
+            style={{ color: isActive ? "#FFFFFF" : "#1E293B" }}
           >
             {category}
           </button>

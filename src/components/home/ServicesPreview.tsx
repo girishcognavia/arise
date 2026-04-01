@@ -55,11 +55,11 @@ export default function ServicesPreview() {
                     <Heart size={32} />
                   </div>
 
-                  <h3 className="font-serif text-2xl text-charcoal mb-4 leading-tight">
+                  <h3 className="font-serif text-2xl text-charcoal mb-4 leading-tight" style={{ color: "#1E293B" }}>
                     {previewServices[1].title}
                   </h3>
 
-                  <p className="text-slate leading-relaxed mb-8 flex-1">
+                  <p className="text-slate leading-relaxed mb-8 flex-1" style={{ color: "#64748B" }}>
                     {previewServices[1].shortDescription}
                   </p>
 
@@ -103,11 +103,11 @@ export default function ServicesPreview() {
                         <Icon size={24} />
                       </div>
 
-                      <h4 className="font-semibold text-charcoal mb-2 text-lg">
+                      <h4 className="font-semibold text-charcoal mb-2 text-lg" style={{ color: "#1E293B" }}>
                         {service.title}
                       </h4>
 
-                      <p className="text-slate text-sm leading-relaxed mb-4">
+                      <p className="text-slate text-sm leading-relaxed mb-4" style={{ color: "#64748B" }}>
                         {service.shortDescription}
                       </p>
 

@@ -64,7 +64,7 @@ function AccordionItem({ course, isOpen, onToggle }: {
       >
         <div className="flex-1 pr-4">
           <div className="flex flex-wrap items-center gap-3 mb-1">
-            <h3 className="font-serif text-lg md:text-xl text-charcoal">
+            <h3 className="font-serif text-lg md:text-xl text-charcoal" style={{ color: "#1E293B" }}>
               {course.title}
             </h3>
             <Badge
@@ -73,7 +73,7 @@ function AccordionItem({ course, isOpen, onToggle }: {
               {course.status === "enquire" ? "Enquire" : "Coming Soon"}
             </Badge>
           </div>
-          <p className="text-sm text-slate">{course.audience}</p>
+          <p className="text-sm text-slate" style={{ color: "#64748B" }}>{course.audience}</p>
         </div>
         <ChevronDown
           className={`w-5 h-5 text-slate flex-shrink-0 transition-transform duration-300 ${
@@ -89,7 +89,7 @@ function AccordionItem({ course, isOpen, onToggle }: {
       >
         <div className="overflow-hidden">
           <div className="px-6 pb-5 pt-2 border-t border-gray-100">
-            <p className="text-slate text-body leading-relaxed">
+            <p className="text-slate text-body leading-relaxed" style={{ color: "#64748B" }}>
               {course.description}
             </p>
           </div>
@@ -130,7 +130,7 @@ export default function CoursesCatalog() {
         </ScrollReveal>
 
         <ScrollReveal animation="fadeIn" delay={0.3}>
-          <p className="text-center text-sm text-slate mt-8 max-w-lg mx-auto">
+          <p className="text-center text-sm text-slate mt-8 max-w-lg mx-auto" style={{ color: "#64748B" }}>
             Course details and schedules are being finalised. Contact us for
             early enrollment enquiries or to express interest in upcoming
             programmes.

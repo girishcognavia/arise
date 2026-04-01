@@ -26,7 +26,7 @@ export default function DoctorBrief() {
                     "linear-gradient(180deg, #0D9488 0%, #065F46 60%, #0F766E 100%)",
                 }}
               >
-                <span className="text-white/90 font-serif text-2xl pb-8">
+                <span className="text-white/90 font-serif text-2xl pb-8" style={{ color: "#E2E8F0" }}>
                   {DOCTOR_INFO.name}
                 </span>
               </div>
@@ -45,7 +45,7 @@ export default function DoctorBrief() {
             </ScrollReveal>
 
             <ScrollReveal animation="fadeUp" delay={0.1}>
-              <h2 className="font-serif text-charcoal leading-tight text-2xl sm:text-3xl lg:text-4xl">
+              <h2 className="font-serif text-charcoal leading-tight text-2xl sm:text-3xl lg:text-4xl" style={{ color: "#1E293B" }}>
                 {DOCTOR_INFO.name}
               </h2>
             </ScrollReveal>
@@ -64,14 +64,14 @@ export default function DoctorBrief() {
                   target={17}
                   className="text-4xl font-bold text-healing-teal font-display"
                 />
-                <span className="text-xl text-charcoal font-semibold">
+                <span className="text-xl text-charcoal font-semibold" style={{ color: "#1E293B" }}>
                   + years of experience
                 </span>
               </div>
             </ScrollReveal>
 
             <ScrollReveal animation="fadeUp" delay={0.4}>
-              <p className="text-slate leading-relaxed">
+              <p className="text-slate leading-relaxed" style={{ color: "#64748B" }}>
                 Specialist in diabetic wound care and diabetes reversal at
                 Sukrithi Family Health Centre, Thrissur. Dr. Premlal combines
                 evidence-based medicine with compassionate care, helping patients
@@ -81,13 +81,13 @@ export default function DoctorBrief() {
             </ScrollReveal>
 
             <ScrollReveal animation="fadeUp" delay={0.5}>
-              <p className="text-slate leading-relaxed">
+              <p className="text-slate leading-relaxed" style={{ color: "#64748B" }}>
                 {DOCTOR_INFO.academicPosition}
               </p>
             </ScrollReveal>
 
             <ScrollReveal animation="fadeUp" delay={0.6}>
-              <div className="flex items-center gap-2 text-sm text-slate">
+              <div className="flex items-center gap-2 text-sm text-slate" style={{ color: "#64748B" }}>
                 <Globe size={16} className="text-healing-teal" />
                 <span className="font-medium">Languages:</span>
                 {DOCTOR_INFO.languages.join(", ")}

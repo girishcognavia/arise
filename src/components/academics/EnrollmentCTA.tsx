@@ -11,10 +11,10 @@ export default function EnrollmentCTA() {
       <Container>
         <ScrollReveal>
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white leading-tight mb-4">
+            <h2 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white leading-tight mb-4" style={{ color: "#FFFFFF" }}>
               Interested in Our Courses?
             </h2>
-            <p className="text-white/80 text-body leading-relaxed mb-8">
+            <p className="text-white/80 text-body leading-relaxed mb-8" style={{ color: "#E2E8F0" }}>
               Contact us for enrollment details, upcoming schedules, and
               information about our training programmes for healthcare
               professionals.
@@ -23,7 +23,7 @@ export default function EnrollmentCTA() {
               <Button
                 variant="secondary"
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-deep-teal"
+                className="border-white text-white hover:bg-white hover:text-deep-teal" style={{ color: "#FFFFFF" }}
               >
                 Get in Touch
               </Button>

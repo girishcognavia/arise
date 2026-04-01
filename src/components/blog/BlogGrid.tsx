@@ -12,7 +12,7 @@ export default function BlogGrid({ posts }: BlogGridProps) {
   if (posts.length === 0) {
     return (
       <div className="text-center py-16">
-        <p className="text-slate text-lg">No posts found in this category.</p>
+        <p className="text-slate text-lg" style={{ color: "#64748B" }}>No posts found in this category.</p>
       </div>
     );
   }

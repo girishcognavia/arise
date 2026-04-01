@@ -50,9 +50,9 @@ export default function AcademicOverview() {
         {/* Doctor academic intro */}
         <ScrollReveal animation="fadeUp" delay={0.2}>
           <div className="mt-12 mb-12 max-w-3xl mx-auto text-center">
-            <p className="text-slate text-body leading-relaxed">
+            <p className="text-slate text-body leading-relaxed" style={{ color: "#64748B" }}>
               With qualifications including{" "}
-              <span className="font-semibold text-charcoal">
+              <span className="font-semibold text-charcoal" style={{ color: "#1E293B" }}>
                 {DOCTOR_INFO.fullTitle.replace("Dr. K S Premlal, ", "")}
               </span>
               , Dr. Premlal is recognised as a multitalented faculty member with
@@ -74,10 +74,10 @@ export default function AcademicOverview() {
                   <item.icon className="w-6 h-6 text-healing-teal group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
-                  <h3 className="font-sans font-semibold text-lg text-charcoal mb-1">
+                  <h3 className="font-sans font-semibold text-lg text-charcoal mb-1" style={{ color: "#1E293B" }}>
                     {item.title}
                   </h3>
-                  <p className="text-slate text-sm leading-relaxed">
+                  <p className="text-slate text-sm leading-relaxed" style={{ color: "#64748B" }}>
                     {item.description}
                   </p>
                 </div>
@@ -89,7 +89,7 @@ export default function AcademicOverview() {
         {/* Qualifications badges */}
         <ScrollReveal animation="fadeUp" delay={0.3}>
           <div className="mt-12 text-center">
-            <p className="text-sm text-slate mb-4 font-medium uppercase tracking-wide">
+            <p className="text-sm text-slate mb-4 font-medium uppercase tracking-wide" style={{ color: "#64748B" }}>
               Key Qualifications
             </p>
             <div className="flex flex-wrap justify-center gap-2">

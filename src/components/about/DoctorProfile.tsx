@@ -72,10 +72,10 @@ export default function DoctorProfile() {
 
                 {/* Name overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-charcoal/80 to-transparent">
-                  <h3 className="text-white font-serif text-2xl">
+                  <h3 className="text-white font-serif text-2xl" style={{ color: "#FFFFFF" }}>
                     {DOCTOR_INFO.name}
                   </h3>
-                  <p className="text-white/70 text-sm mt-1">
+                  <p className="text-white/70 text-sm mt-1" style={{ color: "#CBD5E1" }}>
                     {DOCTOR_INFO.academicPosition}
                   </p>
                 </div>
@@ -86,14 +86,14 @@ export default function DoctorProfile() {
                 <div className="flex items-center gap-2">
                   <Briefcase className="w-5 h-5 text-healing-teal" />
                   <div>
-                    <div className="text-2xl font-bold text-charcoal">
+                    <div className="text-2xl font-bold text-charcoal" style={{ color: "#1E293B" }}>
                       <CounterAnimation
                         target={17}
                         suffix="+"
-                        className="text-2xl font-bold text-charcoal"
+                        className="text-2xl font-bold text-charcoal" style={{ color: "#1E293B" }}
                       />
                     </div>
-                    <p className="text-xs text-slate">Years Experience</p>
+                    <p className="text-xs text-slate" style={{ color: "#64748B" }}>Years Experience</p>
                   </div>
                 </div>
               </div>
@@ -104,10 +104,10 @@ export default function DoctorProfile() {
           <div className="flex flex-col gap-8">
             <ScrollReveal animation="fadeUp">
               <div>
-                <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-charcoal leading-tight">
+                <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-charcoal leading-tight" style={{ color: "#1E293B" }}>
                   {DOCTOR_INFO.name}
                 </h2>
-                <div className="flex items-center gap-2 mt-3 text-slate">
+                <div className="flex items-center gap-2 mt-3 text-slate" style={{ color: "#64748B" }}>
                   <Award className="w-4 h-4 text-warm-gold" />
                   <span className="text-sm font-medium">
                     {DOCTOR_INFO.registration.number} |{" "}
@@ -122,7 +122,7 @@ export default function DoctorProfile() {
               <div>
                 <div className="flex items-center gap-2 mb-4">
                   <GraduationCap className="w-5 h-5 text-healing-teal" />
-                  <h4 className="text-lg font-semibold text-charcoal">
+                  <h4 className="text-lg font-semibold text-charcoal" style={{ color: "#1E293B" }}>
                     Qualifications
                   </h4>
                 </div>
@@ -134,15 +134,15 @@ export default function DoctorProfile() {
                     <div
                       key={index}
                       className="qual-row flex items-start gap-3 p-3 rounded-lg bg-cloud hover:bg-soft-teal/30 transition-colors duration-300"
-                      style={{ opacity: 0 }}
+                      style={{ opacity: 1 }}
                     >
                       <div className="w-2 h-2 rounded-full bg-healing-teal mt-2 shrink-0" />
                       <div>
-                        <p className="text-sm font-semibold text-charcoal">
+                        <p className="text-sm font-semibold text-charcoal" style={{ color: "#1E293B" }}>
                           {qual.degree}
                         </p>
                         {qual.institution && (
-                          <p className="text-xs text-slate mt-0.5">
+                          <p className="text-xs text-slate mt-0.5" style={{ color: "#64748B" }}>
                             {qual.institution}
                           </p>
                         )}
@@ -161,7 +161,7 @@ export default function DoctorProfile() {
             {/* Specializations */}
             <ScrollReveal animation="fadeUp" delay={0.2}>
               <div>
-                <h4 className="text-lg font-semibold text-charcoal mb-3">
+                <h4 className="text-lg font-semibold text-charcoal mb-3" style={{ color: "#1E293B" }}>
                   Specializations
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -179,7 +179,7 @@ export default function DoctorProfile() {
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   <Languages className="w-5 h-5 text-healing-teal" />
-                  <h4 className="text-lg font-semibold text-charcoal">
+                  <h4 className="text-lg font-semibold text-charcoal" style={{ color: "#1E293B" }}>
                     Languages
                   </h4>
                 </div>
@@ -187,7 +187,7 @@ export default function DoctorProfile() {
                   {DOCTOR_INFO.languages.map((lang) => (
                     <span
                       key={lang}
-                      className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium bg-charcoal/5 text-charcoal border border-charcoal/10 hover:border-healing-teal/40 hover:bg-soft-teal/20 transition-all duration-300"
+                      className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium bg-charcoal/5 text-charcoal border border-charcoal/10 hover:border-healing-teal/40 hover:bg-soft-teal/20 transition-all duration-300" style={{ color: "#1E293B" }}
                     >
                       {lang}
                     </span>

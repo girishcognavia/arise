@@ -59,7 +59,7 @@ export default function HeroSection() {
                     "linear-gradient(135deg, #0D9488 0%, #065F46 50%, #0891B2 100%)",
                 }}
               >
-                <span className="text-white/80 font-serif text-lg pb-6">
+                <span className="text-white/80 font-serif text-lg pb-6" style={{ color: "#E2E8F0" }}>
                   Dr. K S Premlal
                 </span>
               </div>
@@ -75,7 +75,7 @@ export default function HeroSection() {
               </Badge>
             </ScrollReveal>
 
-            <h1 className="font-serif text-white leading-tight tracking-tight text-4xl sm:text-5xl lg:text-6xl xl:text-7xl">
+            <h1 className="font-serif text-white leading-tight tracking-tight text-4xl sm:text-5xl lg:text-6xl xl:text-7xl" style={{ color: "#FFFFFF" }}>
               <TextSplitReveal
                 text="Saving Limbs, Transforming Lives"
                 className="text-white [&_.split-word]:text-white"
@@ -84,7 +84,7 @@ export default function HeroSection() {
             </h1>
 
             <ScrollReveal animation="fadeUp" delay={0.6}>
-              <p className="text-gray-300 text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              <p className="text-gray-300 text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed" style={{ color: "#D1D5DB" }}>
                 Expert diabetic wound care without amputation. Evidence-based
                 diabetes reversal. 17+ years of compassionate care.
               </p>
@@ -100,7 +100,7 @@ export default function HeroSection() {
                 <Link href="/services">
                   <Button
                     size="lg"
-                    className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-charcoal transition-all duration-200"
+                    className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-charcoal transition-all duration-200" style={{ color: "#FFFFFF" }}
                   >
                     Our Services
                   </Button>
@@ -110,15 +110,15 @@ export default function HeroSection() {
 
             {/* Trust indicators */}
             <ScrollReveal animation="fadeUp" delay={1.0}>
-              <div className="flex items-center gap-6 justify-center lg:justify-start text-sm text-gray-400">
+              <div className="flex items-center gap-6 justify-center lg:justify-start text-sm text-gray-400" style={{ color: "#9CA3AF" }}>
                 <div className="flex items-center gap-1.5">
-                  <span className="text-white font-semibold">4.9</span>
+                  <span className="text-white font-semibold" style={{ color: "#FFFFFF" }}>4.9</span>
                   <Star size={14} className="text-warm-gold fill-warm-gold" />
                   <span>Google Rating</span>
                 </div>
                 <div className="w-px h-4 bg-gray-600" />
                 <div>
-                  <span className="text-white font-semibold">387+</span>{" "}
+                  <span className="text-white font-semibold" style={{ color: "#FFFFFF" }}>387+</span>{" "}
                   Reviews
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function HeroSection() {
                       "linear-gradient(180deg, #0D9488 0%, #065F46 60%, #0F766E 100%)",
                   }}
                 >
-                  <span className="text-white/90 font-serif text-2xl pb-8">
+                  <span className="text-white/90 font-serif text-2xl pb-8" style={{ color: "#E2E8F0" }}>
                     Dr. K S Premlal
                   </span>
                 </div>
@@ -145,18 +145,18 @@ export default function HeroSection() {
 
               {/* Floating glass badge */}
               <div className="absolute -bottom-4 -left-8 glass rounded-xl px-4 py-3 z-20 animate-fade-up">
-                <div className="text-xs text-slate font-medium">
+                <div className="text-xs text-slate font-medium" style={{ color: "#64748B" }}>
                   Experience
                 </div>
-                <div className="text-lg font-bold text-charcoal">17+ Years</div>
+                <div className="text-lg font-bold text-charcoal" style={{ color: "#1E293B" }}>17+ Years</div>
               </div>
 
               <div className="absolute -top-4 -right-4 glass rounded-xl px-4 py-3 z-20 animate-fade-up">
                 <div className="flex items-center gap-1">
                   <Star size={14} className="text-warm-gold fill-warm-gold" />
-                  <span className="text-lg font-bold text-charcoal">4.9</span>
+                  <span className="text-lg font-bold text-charcoal" style={{ color: "#1E293B" }}>4.9</span>
                 </div>
-                <div className="text-xs text-slate font-medium">Rating</div>
+                <div className="text-xs text-slate font-medium" style={{ color: "#64748B" }}>Rating</div>
               </div>
             </div>
           </div>
@@ -170,7 +170,7 @@ export default function HeroSection() {
       >
         <Link
           href="#pillars"
-          className="flex flex-col items-center gap-2 text-white/60 hover:text-white/80 transition-colors"
+          className="flex flex-col items-center gap-2 text-white/60 hover:text-white/80 transition-colors" style={{ color: "#CBD5E1" }}
         >
           <span className="text-xs tracking-widest uppercase">Scroll</span>
           <ChevronDown size={24} className="animate-bounce" />

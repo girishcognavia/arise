@@ -80,10 +80,10 @@ export default function Infrastructure() {
                 </div>
 
                 {/* Content */}
-                <h4 className="text-base font-semibold text-charcoal mb-2">
+                <h4 className="text-base font-semibold text-charcoal mb-2" style={{ color: "#1E293B" }}>
                   {facility.title}
                 </h4>
-                <p className="text-sm text-slate leading-relaxed">
+                <p className="text-sm text-slate leading-relaxed" style={{ color: "#64748B" }}>
                   {facility.description}
                 </p>
               </div>

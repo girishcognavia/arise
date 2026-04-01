@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
-import { cn } from "@/lib/utils";
 import { CLINIC_INFO, NAV_LINKS, SOCIAL_LINKS } from "@/lib/constants";
 import { Container } from "@/components/ui/Container";
 
@@ -15,7 +14,7 @@ const footerServices = [
 
 export function Footer() {
   return (
-    <footer className="text-white" style={{ backgroundColor: "#0F172A" }}>
+    <footer style={{ backgroundColor: "#0F172A" }}>
       {/* Top border separator */}
       <div className="h-px bg-gradient-to-r from-transparent via-healing-teal/50 to-transparent" />
       <Container className="py-16 lg:py-20">
@@ -24,11 +23,11 @@ export function Footer() {
           {/* Column 1: Clinic Info */}
           <div className="space-y-4">
             <Link href="/" className="inline-block">
-              <span className="font-serif text-2xl font-bold tracking-tight">
+              <span className="font-serif text-2xl font-bold tracking-tight" style={{ color: "#FFFFFF" }}>
                 Sukrithi <span className="text-healing-teal">Health</span>
               </span>
             </Link>
-            <p className="text-white/60 text-sm leading-relaxed">
+            <p className="text-sm leading-relaxed" style={{ color: "#94A3B8" }}>
               {CLINIC_INFO.tagline}
             </p>
             {/* Social icons */}
@@ -37,7 +36,8 @@ export function Footer() {
                 href={SOCIAL_LINKS.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 text-white/70 hover:bg-healing-teal hover:text-white transition-all duration-300"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-healing-teal transition-all duration-300"
+                style={{ color: "#CBD5E1" }}
                 aria-label="Instagram"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -48,7 +48,8 @@ export function Footer() {
                 href={SOCIAL_LINKS.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 text-white/70 hover:bg-healing-teal hover:text-white transition-all duration-300"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-healing-teal transition-all duration-300"
+                style={{ color: "#CBD5E1" }}
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -60,7 +61,7 @@ export function Footer() {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-white/90 mb-4">
+            <h4 className="text-sm font-semibold uppercase tracking-wider mb-4" style={{ color: "#FFFFFF" }}>
               Quick Links
             </h4>
             <ul className="space-y-3">
@@ -68,7 +69,8 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-white/60 text-sm hover:text-healing-teal transition-colors duration-200"
+                    className="text-sm hover:text-healing-teal transition-colors duration-200"
+                    style={{ color: "#CBD5E1" }}
                   >
                     {link.label}
                   </Link>
@@ -79,7 +81,7 @@ export function Footer() {
 
           {/* Column 3: Our Services */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-white/90 mb-4">
+            <h4 className="text-sm font-semibold uppercase tracking-wider mb-4" style={{ color: "#FFFFFF" }}>
               Our Services
             </h4>
             <ul className="space-y-3">
@@ -87,7 +89,8 @@ export function Footer() {
                 <li key={service.href}>
                   <Link
                     href={service.href}
-                    className="text-white/60 text-sm hover:text-healing-teal transition-colors duration-200"
+                    className="text-sm hover:text-healing-teal transition-colors duration-200"
+                    style={{ color: "#CBD5E1" }}
                   >
                     {service.label}
                   </Link>
@@ -98,20 +101,21 @@ export function Footer() {
 
           {/* Column 4: Contact Us */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-white/90 mb-4">
+            <h4 className="text-sm font-semibold uppercase tracking-wider mb-4" style={{ color: "#FFFFFF" }}>
               Contact Us
             </h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 text-healing-teal shrink-0" />
-                <span className="text-white/60 text-sm leading-relaxed">
+                <span className="text-sm leading-relaxed" style={{ color: "#CBD5E1" }}>
                   {CLINIC_INFO.address}
                 </span>
               </li>
               <li>
                 <a
                   href={`tel:${CLINIC_INFO.phone.replace(/\s/g, "")}`}
-                  className="flex items-center gap-3 text-white/60 text-sm hover:text-healing-teal transition-colors duration-200"
+                  className="flex items-center gap-3 text-sm hover:text-healing-teal transition-colors duration-200"
+                  style={{ color: "#CBD5E1" }}
                 >
                   <Phone className="w-4 h-4 text-healing-teal shrink-0" />
                   {CLINIC_INFO.phone}
@@ -122,7 +126,8 @@ export function Footer() {
                   href={CLINIC_INFO.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-white/60 text-sm hover:text-healing-teal transition-colors duration-200"
+                  className="flex items-center gap-3 text-sm hover:text-healing-teal transition-colors duration-200"
+                  style={{ color: "#CBD5E1" }}
                 >
                   <MessageCircle className="w-4 h-4 text-healing-teal shrink-0" />
                   WhatsApp Us
@@ -130,7 +135,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-4 h-4 mt-0.5 text-healing-teal shrink-0" />
-                <div className="text-white/60 text-sm">
+                <div className="text-sm" style={{ color: "#CBD5E1" }}>
                   <p>Mon - Sat: 7:00 AM - 7:00 PM</p>
                   <p>Sunday: Closed</p>
                 </div>
@@ -141,28 +146,31 @@ export function Footer() {
       </Container>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/10">
+      <div className="border-t border-white/15">
         <Container>
           <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-white/40 text-xs">
+            <p className="text-xs" style={{ color: "#94A3B8" }}>
               &copy; {new Date().getFullYear()} {CLINIC_INFO.name}. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <Link
-                href="/medical-disclaimer"
-                className="text-white/40 text-xs hover:text-white/70 transition-colors duration-200"
+                href="/legal/medical-disclaimer"
+                className="text-xs hover:text-healing-teal transition-colors duration-200"
+                style={{ color: "#94A3B8" }}
               >
                 Medical Disclaimer
               </Link>
               <Link
-                href="/privacy-policy"
-                className="text-white/40 text-xs hover:text-white/70 transition-colors duration-200"
+                href="/legal/privacy-policy"
+                className="text-xs hover:text-healing-teal transition-colors duration-200"
+                style={{ color: "#94A3B8" }}
               >
                 Privacy Policy
               </Link>
               <Link
-                href="/terms"
-                className="text-white/40 text-xs hover:text-white/70 transition-colors duration-200"
+                href="/legal/terms"
+                className="text-xs hover:text-healing-teal transition-colors duration-200"
+                style={{ color: "#94A3B8" }}
               >
                 Terms
               </Link>

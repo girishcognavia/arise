@@ -26,9 +26,9 @@ export default function StatsCounter() {
                   target={stat.value}
                   suffix={stat.suffix}
                   decimals={stat.label === "Star Rating" ? 1 : 0}
-                  className="text-4xl lg:text-5xl font-bold text-white font-display"
+                  className="text-4xl lg:text-5xl font-bold text-white font-display" style={{ color: "#FFFFFF" }}
                 />
-                <span className="text-white/80 text-sm lg:text-base font-medium">
+                <span className="text-white/80 text-sm lg:text-base font-medium" style={{ color: "#E2E8F0" }}>
                   {stat.label}
                 </span>
               </div>

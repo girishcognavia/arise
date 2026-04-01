@@ -60,11 +60,11 @@ export default function ThreePillars() {
                     <pillar.icon size={28} />
                   </div>
 
-                  <h3 className="font-serif text-xl text-charcoal mb-3 leading-tight">
+                  <h3 className="font-serif text-xl text-charcoal mb-3 leading-tight" style={{ color: "#1E293B" }}>
                     {pillar.title}
                   </h3>
 
-                  <p className="text-slate text-sm leading-relaxed mb-6">
+                  <p className="text-slate text-sm leading-relaxed mb-6" style={{ color: "#64748B" }}>
                     {pillar.description}
                   </p>
 

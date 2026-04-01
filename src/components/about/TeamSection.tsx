@@ -61,7 +61,7 @@ export default function TeamSection() {
             <div
               key={member.name}
               className="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
-              style={{ opacity: 0 }}
+              style={{ opacity: 1 }}
             >
               {/* Photo placeholder */}
               <div className="relative w-28 h-28 mx-auto mb-5">
@@ -71,25 +71,26 @@ export default function TeamSection() {
                       ? "bg-gradient-to-br from-healing-teal to-deep-teal"
                       : "bg-gradient-to-br from-slate to-charcoal"
                   }`}
+                  style={{ color: "#FFFFFF" }}
                 >
                   {member.initials}
                 </div>
                 {member.isLead && (
                   <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-warm-gold rounded-full flex items-center justify-center shadow-md">
-                    <Stethoscope className="w-4 h-4 text-white" />
+                    <Stethoscope className="w-4 h-4 text-white" style={{ color: "#FFFFFF" }} />
                   </div>
                 )}
               </div>
 
               {/* Info */}
               <div className="text-center">
-                <h3 className="font-serif text-lg text-charcoal">
+                <h3 className="font-serif text-lg text-charcoal" style={{ color: "#1E293B" }}>
                   {member.name}
                 </h3>
                 <p className="text-xs text-healing-teal font-medium mt-1">
                   {member.qualifications}
                 </p>
-                <p className="text-sm text-slate mt-2 leading-relaxed">
+                <p className="text-sm text-slate mt-2 leading-relaxed" style={{ color: "#64748B" }}>
                   {member.specialization}
                 </p>
                 <div className="mt-3 inline-flex items-center gap-1 px-3 py-1 rounded-full bg-soft-teal/50 text-deep-teal text-xs font-semibold">

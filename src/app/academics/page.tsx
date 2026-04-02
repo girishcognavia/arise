@@ -3,15 +3,16 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import AcademicOverview from "@/components/academics/AcademicOverview";
+import ResearchPapers from "@/components/academics/ResearchPapers";
 import CoursesCatalog from "@/components/academics/CoursesCatalog";
 import EnrollmentCTA from "@/components/academics/EnrollmentCTA";
 
 export const metadata: Metadata = {
-  title: "Academics | Sukrithi Family Health Centre",
+  title: "Academics | Arise Medical Centre",
   description:
     "Explore academic programmes, research contributions, and training courses by Dr. K S Premlal — Associate Professor at Malabar Medical College with 22+ research citations.",
   openGraph: {
-    title: "Academics | Sukrithi Family Health Centre",
+    title: "Academics | Arise Medical Centre",
     description:
       "Academic programmes and training courses in diabetic care, palliative medicine, and cancer screening by Dr. K S Premlal.",
   },
@@ -53,6 +54,7 @@ export default function AcademicsPage() {
       </section>
 
       <AcademicOverview />
+      <ResearchPapers />
       <CoursesCatalog />
       <EnrollmentCTA />
     </>

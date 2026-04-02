@@ -6,9 +6,9 @@ import { Container } from "@/components/ui/Container";
 import { CLINIC_INFO } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Medical Disclaimer | Sukrithi Family Health Centre",
+  title: "Medical Disclaimer | Arise Medical Centre",
   description:
-    "Medical disclaimer for Sukrithi Family Health Centre website. Information provided is for general awareness and is not a substitute for professional medical advice.",
+    "Medical disclaimer for Arise Medical Centre website. Information provided is for general awareness and is not a substitute for professional medical advice.",
 };
 
 export default function MedicalDisclaimerPage() {

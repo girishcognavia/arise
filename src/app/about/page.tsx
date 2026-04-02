@@ -10,15 +10,16 @@ import CareerTimeline from "@/components/about/CareerTimeline";
 import ClinicStory from "@/components/about/ClinicStory";
 import TeamSection from "@/components/about/TeamSection";
 import Infrastructure from "@/components/about/Infrastructure";
+import Certificates from "@/components/about/Certificates";
 
 export const metadata: Metadata = {
-  title: "About Dr. K S Premlal & Our Team | Sukrithi Family Health Centre",
+  title: "About Dr. K S Premlal & Our Team | Arise Medical Centre",
   description:
     "Dr. K S Premlal — CCEBDM, CMC-accredited, WHO-certified — brings 17+ years of expertise in diabetes reversal and wound care. Meet the team behind 10,000+ successful patient outcomes in Thrissur, Kerala.",
   keywords: [
     "Dr K S Premlal",
-    "Sukrithi Health Centre",
-    "about sukrithi",
+    "Arise Medical Centre",
+    "about arise",
     "diabetologist thrissur",
     "family doctor thrissur kerala",
     "diabetes specialist kerala",
@@ -26,12 +27,12 @@ export const metadata: Metadata = {
     "best diabetologist thrissur",
   ],
   openGraph: {
-    title: "About Dr. K S Premlal & Our Team | Sukrithi Family Health Centre",
+    title: "About Dr. K S Premlal & Our Team | Arise Medical Centre",
     description:
       "17+ years of evidence-based diabetic care, diabetes reversal, and limb-saving wound care. Meet the team that 10,000+ patients trust in Thrissur, Kerala.",
     locale: "en_IN",
     type: "website",
-    siteName: "Sukrithi Family Health Centre",
+    siteName: "Arise Medical Centre",
   },
 };
 
@@ -76,6 +77,7 @@ export default function AboutPage() {
       <ClinicStory />
       <TeamSection />
       <Infrastructure />
+      <Certificates />
 
       {/* CTA Section */}
       <section

@@ -1,10 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ChevronRight, ArrowLeft, Calendar, Clock, User } from "lucide-react";
 
 import { Container } from "@/components/ui/Container";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
+
+// Map blog slugs to their images
+const blogImages: Record<string, string> = {
+  "diabetic-foot-care-guide": "/images/blog/diabetic-foot-care.jpg",
+  "diabetes-reversal-lifestyle": "/images/blog/diabetes-reversal.jpg",
+  "understanding-hba1c": "/images/blog/hba1c.jpg",
+  "obesity-prevalence-college-students": "/images/blog/obesity-students.jpg",
+  "musculoskeletal-disorders-bus-drivers": "/images/blog/back-pain.jpg",
+  "cardiovascular-risk-young-adults": "/images/blog/heart-health.jpg",
+  "nutrigenomics-future-nutrition": "/images/blog/nutrigenomics.jpg",
+  "covid19-impact-adolescent-health": "/images/blog/adolescent-health.jpg",
+  "hepatitis-b-awareness-study": "/images/blog/hepatitis-vaccine.jpg",
+};
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -20,20 +34,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = getPostBySlug(slug);
 
   if (!post) {
-    return { title: "Post Not Found | Sukrithi Family Health Centre" };
+    return { title: "Post Not Found | Arise Medical Centre" };
   }
 
   return {
-    title: `${post.title} | Sukrithi Family Health Centre`,
+    title: `${post.title} | Arise Medical Centre`,
     description: post.excerpt,
-    keywords: [post.category, "sukrithi health", "Dr Premlal", "diabetes"],
+    keywords: [post.category, "arise health", "Dr Prem Lal", "diabetes"],
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
-      siteName: "Sukrithi Family Health Centre",
+      siteName: "Arise Medical Centre",
       locale: "en_IN",
     },
   };
@@ -53,6 +67,8 @@ export default async function BlogPostPage({ params }: PageProps) {
     day: "numeric",
   });
 
+  const imageSrc = blogImages[post.slug] || post.image;
+
   // Convert markdown-style content to simple HTML paragraphs
   const contentHtml = post.content
     .split("\n\n")
@@ -65,50 +81,99 @@ export default async function BlogPostPage({ params }: PageProps) {
       if (trimmed.startsWith("### ")) {
         return `<h3>${trimmed.slice(4)}</h3>`;
       }
-      return `<p>${trimmed}</p>`;
+      // Handle markdown links [text](url)
+      const withLinks = trimmed.replace(
+        /\[([^\]]+)\]\(([^)]+)\)/g,
+        '<a href="$2" class="text-healing-teal hover:underline">$1</a>'
+      );
+      // Handle bold **text**
+      const withBold = withLinks.replace(
+        /\*\*([^*]+)\*\*/g,
+        "<strong>$1</strong>"
+      );
+      // Handle italic *text*
+      const withItalic = withBold.replace(
+        /\*([^*]+)\*/g,
+        "<em>$1</em>"
+      );
+      // Handle horizontal rules
+      if (trimmed === "---") {
+        return '<hr class="my-8 border-gray-200" />';
+      }
+      return `<p>${withItalic}</p>`;
     })
     .join("\n");
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-charcoal text-white py-16 md:py-20">
-        <Container>
-          <nav className="flex items-center gap-1 text-sm text-slate mb-6">
-            <Link href="/" className="hover:text-healing-teal transition-colors">
-              Home
-            </Link>
-            <ChevronRight className="w-4 h-4" />
-            <Link href="/blog" className="hover:text-healing-teal transition-colors">
-              Blog
-            </Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-white line-clamp-1">{post.title}</span>
-          </nav>
+      {/* Hero with featured image */}
+      <section className="relative">
+        {/* Image background */}
+        <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] w-full overflow-hidden">
+          {imageSrc ? (
+            <Image
+              src={imageSrc}
+              alt={post.title}
+              fill
+              className="object-cover"
+              priority
+            />
+          ) : (
+            <div className="w-full h-full bg-gradient-to-br from-healing-teal/30 to-deep-teal/60" />
+          )}
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/70 to-charcoal/30" />
+        </div>
 
-          <span className="inline-block bg-healing-teal text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
-            {post.category}
-          </span>
+        {/* Text content positioned over the image */}
+        <div className="absolute inset-0 flex items-end">
+          <Container className="pb-10 lg:pb-14">
+            {/* Breadcrumb */}
+            <nav className="flex items-center gap-1 text-sm mb-4" style={{ color: "#94A3B8" }}>
+              <Link href="/" className="hover:text-healing-teal transition-colors">
+                Home
+              </Link>
+              <ChevronRight className="w-4 h-4" />
+              <Link href="/blog" className="hover:text-healing-teal transition-colors">
+                Blog
+              </Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="line-clamp-1" style={{ color: "#E2E8F0" }}>{post.title}</span>
+            </nav>
 
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 max-w-3xl">
-            {post.title}
-          </h1>
+            {/* Category badge */}
+            <span
+              className="inline-block bg-healing-teal text-xs font-semibold px-3 py-1 rounded-full mb-4"
+              style={{ color: "#FFFFFF" }}
+            >
+              {post.category}
+            </span>
 
-          <div className="flex flex-wrap items-center gap-6 text-sm text-slate">
-            <span className="flex items-center gap-1.5">
-              <User className="w-4 h-4" />
-              {post.author}
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Calendar className="w-4 h-4" />
-              <time dateTime={post.date}>{formattedDate}</time>
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Clock className="w-4 h-4" />
-              {post.readingTime}
-            </span>
-          </div>
-        </Container>
+            {/* Title */}
+            <h1
+              className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 max-w-3xl leading-tight"
+              style={{ color: "#FFFFFF" }}
+            >
+              {post.title}
+            </h1>
+
+            {/* Meta info */}
+            <div className="flex flex-wrap items-center gap-6 text-sm" style={{ color: "#CBD5E1" }}>
+              <span className="flex items-center gap-1.5">
+                <User className="w-4 h-4" />
+                {post.author}
+              </span>
+              <span className="flex items-center gap-1.5">
+                <Calendar className="w-4 h-4" />
+                <time dateTime={post.date}>{formattedDate}</time>
+              </span>
+              <span className="flex items-center gap-1.5">
+                <Clock className="w-4 h-4" />
+                {post.readingTime}
+              </span>
+            </div>
+          </Container>
+        </div>
       </section>
 
       {/* Article Content */}

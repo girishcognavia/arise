@@ -9,6 +9,12 @@ const blogImages: Record<string, string> = {
   "diabetic-foot-care-guide": "/images/blog/diabetic-foot-care.jpg",
   "diabetes-reversal-lifestyle": "/images/blog/diabetes-reversal.jpg",
   "understanding-hba1c": "/images/blog/hba1c.jpg",
+  "obesity-prevalence-college-students": "/images/blog/obesity-students.jpg",
+  "musculoskeletal-disorders-bus-drivers": "/images/blog/back-pain.jpg",
+  "cardiovascular-risk-young-adults": "/images/blog/heart-health.jpg",
+  "nutrigenomics-future-nutrition": "/images/blog/nutrigenomics.jpg",
+  "covid19-impact-adolescent-health": "/images/blog/adolescent-health.jpg",
+  "hepatitis-b-awareness-study": "/images/blog/hepatitis-vaccine.jpg",
 };
 
 interface BlogCardProps {
@@ -25,10 +31,10 @@ export default function BlogCard({ post }: BlogCardProps) {
   const imageSrc = blogImages[post.slug];
 
   return (
-    <Link href={`/blog/${post.slug}`} className="group block">
-      <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden h-full flex flex-col">
-        {/* Image area */}
-        <div className="relative overflow-hidden aspect-[16/9]">
+    <Link href={`/blog/${post.slug}`} className="group block h-full">
+      <article className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden h-full grid grid-rows-[auto_1fr]">
+        {/* Image area — fixed aspect ratio */}
+        <div className="relative overflow-hidden aspect-[16/10]">
           {imageSrc ? (
             <Image
               src={imageSrc}
@@ -39,20 +45,40 @@ export default function BlogCard({ post }: BlogCardProps) {
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-healing-teal/20 to-deep-teal/40 group-hover:scale-105 transition-transform duration-500" />
           )}
-          <span className="absolute top-3 left-3 bg-healing-teal text-white text-xs font-semibold px-3 py-1 rounded-full z-10" style={{ color: "#FFFFFF" }}>
+          <span
+            className="absolute top-3 left-3 bg-healing-teal text-xs font-semibold px-3 py-1 rounded-full z-10"
+            style={{ color: "#FFFFFF" }}
+          >
             {post.category}
           </span>
         </div>
 
-        {/* Content */}
-        <div className="p-5 flex flex-col flex-1">
-          <h3 className="font-serif text-lg font-bold text-charcoal group-hover:text-healing-teal transition-colors duration-300 mb-2" style={{ color: "#1E293B" }}>
+        {/* Content — grid rows for consistent alignment */}
+        <div className="p-5 grid grid-rows-[auto_auto_1fr_auto] gap-2">
+          {/* Title — clamped to 2 lines */}
+          <h3
+            className="font-serif text-lg font-bold group-hover:text-healing-teal transition-colors duration-300 line-clamp-2"
+            style={{ color: "#1E293B" }}
+          >
             {post.title}
           </h3>
-          <p className="text-slate text-sm line-clamp-2 mb-4 flex-1" style={{ color: "#64748B" }}>
+
+          {/* Excerpt — clamped to 2 lines */}
+          <p
+            className="text-sm line-clamp-2"
+            style={{ color: "#64748B" }}
+          >
             {post.excerpt}
           </p>
-          <div className="flex items-center justify-between text-xs text-slate border-t border-gray-100 pt-3" style={{ color: "#64748B" }}>
+
+          {/* Spacer */}
+          <div />
+
+          {/* Footer — always at bottom */}
+          <div
+            className="flex items-center justify-between text-xs border-t border-gray-100 pt-3"
+            style={{ color: "#64748B" }}
+          >
             <time dateTime={post.date}>{formattedDate}</time>
             <span>{post.readingTime}</span>
           </div>

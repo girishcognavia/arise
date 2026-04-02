@@ -8,13 +8,13 @@ import ContactInfoCards from "@/components/contact/ContactInfoCards";
 import ClinicMap from "@/components/contact/ClinicMap";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Sukrithi Family Health Centre",
+  title: "Contact Us | Arise Medical Centre",
   description:
-    "Book an appointment at Sukrithi Family Health Centre, Thrissur. Call +91 85920 20242 or fill our online form. Mon-Sat 7AM-7PM.",
+    "Book an appointment at Arise Medical Centre, Thrissur. Call +91 85920 20242 or fill our online form. Mon-Sat 7AM-7PM.",
   openGraph: {
-    title: "Contact Us | Sukrithi Family Health Centre",
+    title: "Contact Us | Arise Medical Centre",
     description:
-      "Book an appointment with Dr. K S Premlal at Sukrithi Family Health Centre, Villadom, Thrissur. Walk-ins welcome.",
+      "Book an appointment with Dr. K S Premlal at Arise Medical Centre, Villadom, Thrissur. Walk-ins welcome.",
   },
 };
 

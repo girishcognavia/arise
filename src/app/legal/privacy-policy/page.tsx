@@ -6,9 +6,9 @@ import { Container } from "@/components/ui/Container";
 import { CLINIC_INFO } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Sukrithi Family Health Centre",
+  title: "Privacy Policy | Arise Medical Centre",
   description:
-    "Privacy policy for Sukrithi Family Health Centre. Learn how we collect, use, and protect your personal data in compliance with the DPDP Act 2023.",
+    "Privacy policy for Arise Medical Centre. Learn how we collect, use, and protect your personal data in compliance with the DPDP Act 2023.",
 };
 
 export default function PrivacyPolicyPage() {

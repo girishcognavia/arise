@@ -7,7 +7,7 @@ interface PageMetadataOptions {
   image?: string;
 }
 
-const SITE_NAME = "Sukrithi Family Health Centre";
+const SITE_NAME = "Arise Medical Centre";
 const DEFAULT_IMAGE = "/images/og-default.jpg";
 
 export function generatePageMetadata({
@@ -39,7 +39,7 @@ export function generatePageMetadata({
 export const DEFAULT_METADATA: Metadata = {
   title: {
     default:
-      "Sukrithi Family Health Centre | Diabetes Reversal & Wound Care Without Amputation | Thrissur, Kerala",
+      "Arise Medical Centre | Diabetes Reversal & Wound Care Without Amputation | Thrissur, Kerala",
     template: `%s | ${SITE_NAME}`,
   },
   description:
@@ -52,13 +52,13 @@ export const DEFAULT_METADATA: Metadata = {
     "diabetic foot care thrissur",
     "best diabetes doctor thrissur",
     "Dr Premlal",
-    "sukrithi health",
+    "arise health",
     "diabetes reversal program india",
     "HbA1c reduction",
   ],
   openGraph: {
     title:
-      "Sukrithi Family Health Centre | Diabetes Reversal & Wound Care Without Amputation | Thrissur",
+      "Arise Medical Centre | Diabetes Reversal & Wound Care Without Amputation | Thrissur",
     description:
       "Proven HbA1c reduction in 3 months. CMC-accredited wound care saving limbs. 10,000+ patients trust Dr. K S Premlal in Thrissur, Kerala.",
     images: [DEFAULT_IMAGE],

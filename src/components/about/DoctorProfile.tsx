@@ -171,6 +171,9 @@ export default function DoctorProfile() {
                       {spec}
                     </Badge>
                   ))}
+                  <Badge variant="success" className="text-xs">
+                    16+ Research Publications
+                  </Badge>
                 </div>
               </div>
             </ScrollReveal>

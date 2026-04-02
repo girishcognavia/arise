@@ -49,7 +49,7 @@ export function Navbar() {
                 "transition-colors duration-300",
                 isAtTop ? "text-white" : "text-charcoal"
               )}>
-                Sukrithi
+                Arise
               </span>
               <span className="text-healing-teal">Health</span>
             </Link>

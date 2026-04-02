@@ -24,7 +24,7 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/" className="inline-block">
               <span className="font-serif text-2xl font-bold tracking-tight" style={{ color: "#FFFFFF" }}>
-                Sukrithi <span className="text-healing-teal">Health</span>
+                Arise <span className="text-healing-teal">Health</span>
               </span>
             </Link>
             <p className="text-sm leading-relaxed" style={{ color: "#94A3B8" }}>

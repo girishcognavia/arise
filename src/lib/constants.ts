@@ -14,7 +14,7 @@ import type {
 // ---------------------------------------------------------------------------
 
 export const CLINIC_INFO: ClinicInfo = {
-  name: "Sukrithi Family Health Centre",
+  name: "Arise Medical Centre",
   tagline: "The Place Where Healing Starts",
   mission:
     "To nurture a healthy and happy community by providing quality health care through integrated and compassionate services.",
@@ -296,4 +296,5 @@ export const BLOG_CATEGORIES: string[] = [
   "Preventive Health Tips",
   "Cancer Awareness & Screening",
   "Mental Health & Chronic Disease",
+  "Research Publication",
 ];

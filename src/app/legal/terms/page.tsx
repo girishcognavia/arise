@@ -6,9 +6,9 @@ import { Container } from "@/components/ui/Container";
 import { CLINIC_INFO } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | Sukrithi Family Health Centre",
+  title: "Terms & Conditions | Arise Medical Centre",
   description:
-    "Terms and conditions for using the Sukrithi Family Health Centre website. Read about our policies on appointments, intellectual property, and liability.",
+    "Terms and conditions for using the Arise Medical Centre website. Read about our policies on appointments, intellectual property, and liability.",
 };
 
 export default function TermsPage() {

@@ -15,7 +15,7 @@ export default function ClinicMap() {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Sukrithi Family Health Centre Location"
+          title="Arise Medical Centre Location"
           className="w-full h-[400px]"
         />
       </div>

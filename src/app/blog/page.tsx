@@ -6,7 +6,7 @@ import { getAllPosts, getAllCategories } from "@/lib/blog";
 import BlogListingClient from "@/components/blog/BlogListingClient";
 
 export const metadata: Metadata = {
-  title: "Blog & Resources | Sukrithi Family Health Centre",
+  title: "Blog & Resources | Arise Medical Centre",
   description:
     "Expert health articles on diabetes management, diabetic foot care, preventive health, cancer screening, and lifestyle tips from Dr. K S Premlal.",
   keywords: [
@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     "Dr Premlal articles",
   ],
   openGraph: {
-    title: "Blog & Resources | Sukrithi Family Health Centre",
+    title: "Blog & Resources | Arise Medical Centre",
     description:
-      "Expert health articles on diabetes management, foot care, preventive health, and lifestyle tips from Dr. K S Premlal at Sukrithi Family Health Centre, Thrissur.",
+      "Expert health articles on diabetes management, foot care, preventive health, and lifestyle tips from Dr. K S Premlal at Arise Medical Centre, Thrissur.",
     locale: "en_IN",
     type: "website",
-    siteName: "Sukrithi Family Health Centre",
+    siteName: "Arise Medical Centre",
   },
 };
 
@@ -59,7 +59,7 @@ export default function BlogPage() {
 
             <p className="text-lg md:text-xl max-w-2xl leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
               Expert insights on diabetes management, preventive health, and
-              evidence-based wellness from Dr. K S Premlal and the Sukrithi team.
+              evidence-based wellness from Dr. K S Premlal and the Arise team.
             </p>
           </div>
         </Container>

@@ -12,7 +12,7 @@ import Counselling from "@/components/services/Counselling";
 import TeleConsultation from "@/components/services/TeleConsultation";
 
 export const metadata: Metadata = {
-  title: "Services — Diabetes Reversal, Wound Care & More | Sukrithi Family Health Centre",
+  title: "Services — Diabetes Reversal, Wound Care & More | Arise Medical Centre",
   description:
     "Diabetes reversal with proven HbA1c results. CMC-accredited wound care without amputation. ICMR-certified cancer screening. WHO-certified palliative care. All under one roof in Thrissur, Kerala.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "HbA1c reduction program India",
   ],
   openGraph: {
-    title: "Services — Diabetes Reversal, Wound Care & More | Sukrithi Family Health Centre",
+    title: "Services — Diabetes Reversal, Wound Care & More | Arise Medical Centre",
     description:
       "Proven diabetes reversal. Limb-saving wound care. ICMR-certified cancer screening. 7 specialised services by Dr. K S Premlal in Thrissur.",
     type: "website",

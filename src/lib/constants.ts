@@ -27,7 +27,7 @@ export const CLINIC_INFO: ClinicInfo = {
     "Near Higher Secondary School, Villadom, Villadam, Thrissur, Kerala 680631, India",
   mapUrl:
     "https://maps.google.com/maps?q=Sukrithi+Family+Health+Centre+Villadom+Thrissur+Kerala+680631&t=&z=15&ie=UTF8&iwloc=&output=embed",
-  fee: "From ₹300",
+  fee: "From ₹500",
   paymentMethods: ["Cash", "UPI"],
 };
 

@@ -46,7 +46,7 @@ const infoCards: InfoCard[] = [
   {
     icon: <IndianRupee className="w-6 h-6" />,
     title: "Consultation Fee",
-    detail: "Starting from \u20B9300",
+    detail: "Starting from ₹500",
     subDetail: "Cash & UPI accepted",
   },
 ];

@@ -34,8 +34,8 @@ export function Navbar() {
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out",
           isHidden && "-translate-y-full",
           isAtTop
-            ? "bg-transparent text-white"
-            : "bg-white/80 backdrop-blur-xl border-b border-gray-100 shadow-sm text-charcoal"
+            ? "bg-white/60 backdrop-blur-sm text-charcoal"
+            : "bg-white/90 backdrop-blur-xl border-b border-gray-100 shadow-sm text-charcoal"
         )}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,10 +45,7 @@ export function Navbar() {
               href="/"
               className="flex items-center gap-2 font-serif text-xl lg:text-2xl font-bold tracking-tight"
             >
-              <span className={cn(
-                "transition-colors duration-300",
-                isAtTop ? "text-white" : "text-charcoal"
-              )}>
+              <span className="transition-colors duration-300 text-charcoal">
                 Arise
               </span>
               <span className="text-healing-teal">Health</span>
@@ -66,9 +63,7 @@ export function Navbar() {
                       "relative text-sm font-medium transition-colors duration-300 py-1",
                       isActive
                         ? "text-healing-teal"
-                        : isAtTop
-                          ? "text-white/90 hover:text-white"
-                          : "text-charcoal/80 hover:text-charcoal",
+                        : "text-charcoal/80 hover:text-charcoal",
                       "group"
                     )}
                   >
@@ -89,12 +84,7 @@ export function Navbar() {
             <div className="hidden lg:flex items-center gap-4">
               <a
                 href={`tel:${CLINIC_INFO.phone.replace(/\s/g, "")}`}
-                className={cn(
-                  "flex items-center gap-2 text-sm font-medium transition-colors duration-300",
-                  isAtTop
-                    ? "text-white/90 hover:text-white"
-                    : "text-charcoal/80 hover:text-charcoal"
-                )}
+                className="flex items-center gap-2 text-sm font-medium transition-colors duration-300 text-charcoal/80 hover:text-charcoal"
               >
                 <Phone className="w-4 h-4" />
                 {CLINIC_INFO.phone}
@@ -116,22 +106,19 @@ export function Navbar() {
               <div className="flex flex-col items-center justify-center gap-1.5">
                 <span
                   className={cn(
-                    "block w-6 h-0.5 rounded-full transition-all duration-300",
-                    isAtTop ? "bg-white" : "bg-charcoal",
+                    "block w-6 h-0.5 rounded-full transition-all duration-300 bg-charcoal",
                     mobileMenuOpen && "rotate-45 translate-y-2"
                   )}
                 />
                 <span
                   className={cn(
-                    "block w-6 h-0.5 rounded-full transition-all duration-300",
-                    isAtTop ? "bg-white" : "bg-charcoal",
+                    "block w-6 h-0.5 rounded-full transition-all duration-300 bg-charcoal",
                     mobileMenuOpen && "opacity-0"
                   )}
                 />
                 <span
                   className={cn(
-                    "block w-6 h-0.5 rounded-full transition-all duration-300",
-                    isAtTop ? "bg-white" : "bg-charcoal",
+                    "block w-6 h-0.5 rounded-full transition-all duration-300 bg-charcoal",
                     mobileMenuOpen && "-rotate-45 -translate-y-2"
                   )}
                 />

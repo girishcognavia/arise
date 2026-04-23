@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { CLINIC_INFO } from "@/lib/constants";
+import { getImagePath } from "@/lib/image-path";
 
 type JourneyOption = {
   id: string;
@@ -149,7 +150,7 @@ export default function HeroSectionRedesign() {
               {/* Doctor image with video play button */}
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
                 <Image
-                  src="/images/doctor/dr-premlal.jpg"
+                  src={getImagePath("/images/doctor/dr-premlal.jpg")}
                   alt="Dr. K S Premlal - Diabetes & Wound Care Specialist"
                   fill
                   className="object-cover"

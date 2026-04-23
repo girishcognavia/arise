@@ -7,6 +7,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/animation/ScrollReveal";
 import StaggerChildren from "@/components/animation/StaggerChildren";
+import { getImagePath } from "@/lib/image-path";
 
 const CERTIFICATES = [
   {
@@ -71,7 +72,7 @@ export default function Certificates() {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src={cert.image}
+                  src={getImagePath(cert.image)}
                   alt={cert.title}
                   fill
                   className="object-cover rounded-t-xl transition-transform duration-300 group-hover:scale-105"
@@ -127,7 +128,7 @@ export default function Certificates() {
             onClick={(e) => e.stopPropagation()}
           >
             <Image
-              src={selectedCert.image}
+              src={getImagePath(selectedCert.image)}
               alt={selectedCert.title}
               fill
               className="object-contain rounded-lg"

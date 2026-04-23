@@ -8,6 +8,7 @@ import { CheckCircle } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import ScrollReveal from "@/components/animation/ScrollReveal";
+import { getImagePath } from "@/lib/image-path";
 
 interface ServiceCardProps {
   title: string;
@@ -35,7 +36,7 @@ export default function ServiceCard({
       <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
         {imageSrc ? (
           <Image
-            src={imageSrc}
+            src={getImagePath(imageSrc)}
             alt={title}
             fill
             className="object-cover"

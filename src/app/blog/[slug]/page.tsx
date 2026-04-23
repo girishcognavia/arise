@@ -6,6 +6,7 @@ import { ChevronRight, ArrowLeft, Calendar, Clock, User } from "lucide-react";
 
 import { Container } from "@/components/ui/Container";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
+import { getImagePath } from "@/lib/image-path";
 
 // Map blog slugs to their images
 const blogImages: Record<string, string> = {
@@ -112,7 +113,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] w-full overflow-hidden">
           {imageSrc ? (
             <Image
-              src={imageSrc}
+              src={getImagePath(imageSrc)}
               alt={post.title}
               fill
               className="object-cover"

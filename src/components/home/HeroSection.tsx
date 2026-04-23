@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/Badge";
 import TextSplitReveal from "@/components/animation/TextSplitReveal";
 import OrganicBlobs from "@/components/animation/OrganicBlobs";
 import ScrollReveal from "@/components/animation/ScrollReveal";
+import { getImagePath } from "@/lib/image-path";
 
 export default function HeroSection() {
   const scrollIndicatorRef = useRef<HTMLDivElement>(null);
@@ -55,7 +56,7 @@ export default function HeroSection() {
               <OrganicBlobs />
               <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/doctor/dr-premlal.jpg"
+                  src={getImagePath("/images/doctor/dr-premlal.jpg")}
                   alt="Dr. K S Premlal"
                   fill
                   className="object-cover"
@@ -136,7 +137,7 @@ export default function HeroSection() {
               <ScrollReveal animation="slideRight" delay={0.5} className="relative z-10 h-full">
                 <div className="w-full h-full rounded-2xl overflow-hidden shadow-2xl relative">
                   <Image
-                    src="/images/doctor/dr-premlal.jpg"
+                    src={getImagePath("/images/doctor/dr-premlal.jpg")}
                     alt="Dr. K S Premlal"
                     fill
                     className="object-cover"

@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/Button";
 import ScrollReveal from "@/components/animation/ScrollReveal";
 import CounterAnimation from "@/components/animation/CounterAnimation";
 import { DOCTOR_INFO } from "@/lib/constants";
+import { getImagePath } from "@/lib/image-path";
 
 const keyQualifications = ["MBBS", "MD", "CCEBDM", "PGDFM", "CMC-accredited"];
 
@@ -22,7 +23,7 @@ export default function DoctorBrief() {
             <div className="relative max-w-md mx-auto lg:mx-0">
               <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-xl relative">
                 <Image
-                  src="/images/doctor/dr-premlal.jpg"
+                  src={getImagePath("/images/doctor/dr-premlal.jpg")}
                   alt={DOCTOR_INFO.name}
                   fill
                   className="object-cover"

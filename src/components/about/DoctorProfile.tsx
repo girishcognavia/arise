@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Container } from "@/components/ui/Container";
 import { Badge } from "@/components/ui/Badge";
 import { DOCTOR_INFO } from "@/lib/constants";
+import { getImagePath } from "@/lib/image-path";
 import CounterAnimation from "@/components/animation/CounterAnimation";
 import ScrollReveal from "@/components/animation/ScrollReveal";
 import { GraduationCap, Languages, Award, Briefcase } from "lucide-react";
@@ -62,7 +63,7 @@ export default function DoctorProfile() {
             <div className="relative">
               <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden relative">
                 <Image
-                  src="/images/doctor/dr-premlal.jpg"
+                  src={getImagePath("/images/doctor/dr-premlal.jpg")}
                   alt={DOCTOR_INFO.name}
                   fill
                   className="object-cover"

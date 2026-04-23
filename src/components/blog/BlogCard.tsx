@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { BlogPost } from "@/types/blog";
+import { getImagePath } from "@/lib/image-path";
 
 // Map blog slugs to their images
 const blogImages: Record<string, string> = {
@@ -37,7 +38,7 @@ export default function BlogCard({ post }: BlogCardProps) {
         <div className="relative overflow-hidden aspect-[16/10]">
           {imageSrc ? (
             <Image
-              src={imageSrc}
+              src={getImagePath(imageSrc)}
               alt={post.title}
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"

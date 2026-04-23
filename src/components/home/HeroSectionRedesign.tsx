@@ -61,7 +61,7 @@ export default function HeroSectionRedesign() {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-b from-warm-cream via-white to-soft-teal/20 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-warm-cream via-white to-soft-teal/20 overflow-hidden">
       {/* Subtle background pattern */}
       <div
         className="absolute inset-0 opacity-30"
@@ -71,7 +71,7 @@ export default function HeroSectionRedesign() {
         }}
       />
 
-      <Container className="relative z-10 pt-24 pb-16 lg:pt-32 lg:pb-24">
+      <Container className="relative z-10 pt-28 pb-12 lg:pt-36 lg:pb-16">
         {/* Trust bar - moved to top */}
         <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 mb-12 text-sm">
           <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-gray-100">
@@ -147,13 +147,14 @@ export default function HeroSectionRedesign() {
           <div className="relative">
             <div className="relative max-w-md mx-auto lg:max-w-none">
               {/* Doctor image with video play button */}
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
                 <Image
                   src="/images/doctor/dr-premlal.jpg"
                   alt="Dr. K S Premlal - Diabetes & Wound Care Specialist"
                   fill
                   className="object-cover"
                   priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent" />
 
@@ -213,7 +214,7 @@ export default function HeroSectionRedesign() {
               <Link
                 key={option.id}
                 href={option.link}
-                className={`journey-option group ${
+                className={`journey-option group relative ${
                   selectedJourney === option.id ? "selected" : ""
                 }`}
                 onMouseEnter={() => setSelectedJourney(option.id)}

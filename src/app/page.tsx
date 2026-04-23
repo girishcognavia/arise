@@ -1,4 +1,4 @@
-import HeroSection from "@/components/home/HeroSection";
+import HeroSectionRedesign from "@/components/home/HeroSectionRedesign";
 import ThreePillars from "@/components/home/ThreePillars";
 import DoctorBrief from "@/components/home/DoctorBrief";
 import StatsCounter from "@/components/home/StatsCounter";
@@ -9,7 +9,7 @@ import CTABanner from "@/components/home/CTABanner";
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      <HeroSectionRedesign />
       <ThreePillars />
       <DoctorBrief />
       <StatsCounter />

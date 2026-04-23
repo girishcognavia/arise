@@ -12,7 +12,9 @@ import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 import { BackToTop } from "@/components/shared/BackToTop";
 import { BookAppointmentCTA } from "@/components/shared/BookAppointmentCTA";
 import { ScrollProgressBar } from "@/components/layout/ScrollProgressBar";
-import CursorFollower from "@/components/animation/CursorFollower";
+import { AccessibilityProvider } from "@/providers/AccessibilityProvider";
+import { StickyBookingBar } from "@/components/shared/StickyBookingBar";
+import { AccessibilityPanel } from "@/components/shared/AccessibilityPanel";
 
 export const metadata = DEFAULT_METADATA;
 
@@ -27,18 +29,20 @@ export default function RootLayout({
       className={`${dmSerifDisplay.variable} ${inter.variable} ${dmSans.variable}`}
     >
       <body className="font-sans text-charcoal bg-white antialiased">
-        <AnimationProvider>
-          <LenisProvider>
-            <ScrollProgressBar />
-            <Navbar />
-            <main className="min-h-screen">{children}</main>
-            <Footer />
-            <WhatsAppButton />
-            <BackToTop />
-            <BookAppointmentCTA />
-            <CursorFollower />
-          </LenisProvider>
-        </AnimationProvider>
+        <AccessibilityProvider>
+          <AnimationProvider>
+            <LenisProvider>
+              <ScrollProgressBar />
+              <Navbar />
+              <main className="min-h-screen">{children}</main>
+              <Footer />
+              <WhatsAppButton />
+              <BackToTop />
+              <StickyBookingBar />
+              <AccessibilityPanel />
+            </LenisProvider>
+          </AnimationProvider>
+        </AccessibilityProvider>
       </body>
     </html>
   );

@@ -19,6 +19,12 @@
   --color-alert: #DC2626;
   --color-whatsapp: #25D366;
 
+  /* Warm & Empathetic Colors */
+  --color-warm-cream: #FDF8F3;
+  --color-warm-beige: #F5EDE4;
+  --color-warm-coral: #F4A896;
+  --color-warm-coral-light: #FEF1ED;
+
   /* Font families (mapped to Next.js font variables) */
   --font-serif: var(--font-dm-serif);
   --font-sans: var(--font-inter);
@@ -51,6 +57,14 @@
   --color-success: #16A34A;
   --color-alert: #DC2626;
   --color-whatsapp: #25D366;
+
+  /* ---- NEW: Warm & Empathetic Colors ---- */
+  --color-warm-cream: #FDF8F3;
+  --color-warm-beige: #F5EDE4;
+  --color-warm-coral: #F4A896;
+  --color-warm-coral-light: #FEF1ED;
+  --color-trust-blue: #3B82F6;
+  --color-calm-sage: #A3B18A;
 
   /* ---- Gradients ---- */
   --gradient-hero: linear-gradient(135deg, #0D9488 0%, #065F46 50%, #1E293B 100%);
@@ -563,4 +577,114 @@ p {
     animation: none !important;
     transform: scaleX(1);
   }
+}
+
+/* User-triggered reduced motion */
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.15s !important;
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+
+.high-contrast {
+  --color-primary: #007A6E;
+  --color-neutral-medium: #374151;
+  --color-neutral-dark: #111827;
+}
+
+.high-contrast p,
+.high-contrast span {
+  color: var(--color-neutral-dark) !important;
+}
+
+/* ============================================
+   ACCESSIBILITY PANEL
+   ============================================ */
+
+.accessibility-panel {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 100;
+  background: white;
+  border-radius: 12px 0 0 12px;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.accessibility-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-neutral-light);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.accessibility-btn:hover {
+  background: var(--color-primary-light);
+  border-color: var(--color-primary);
+}
+
+.accessibility-btn.active {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* ============================================
+   EMPATHY-FIRST STYLES
+   ============================================ */
+
+.empathy-gradient {
+  background: linear-gradient(135deg, var(--color-warm-cream) 0%, white 50%, var(--color-primary-light) 100%);
+}
+
+.trust-card {
+  background: white;
+  border: 1px solid rgba(13, 148, 136, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.trust-card:hover {
+  border-color: rgba(13, 148, 136, 0.3);
+  box-shadow: 0 8px 30px rgba(13, 148, 136, 0.08);
+}
+
+/* Patient Journey Selector */
+.journey-option {
+  padding: 20px 24px;
+  background: white;
+  border: 2px solid var(--color-neutral-light);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.journey-option:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.journey-option.selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.1);
 }
